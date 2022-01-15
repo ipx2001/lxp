@@ -4,362 +4,240 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enable: true
-  enhanced-mode: fake-ip
-  nameserver:
-    - 8.8.8.8 # 真实请求DNS，可多设置几个
-    - 114.114.114.114
-    - 223.5.5.5
-    - 101.6.6.6
-    - 119.29.29.29
-    - 8.8.4.4
-    - 1.1.1.1
-    - 119.29.29.29
-    - 223.5.5.5
-    - 1.2.4.8
-    - tls://dns.rubyfish.cn:853
-    - dhcp://以太网
-  fake-ip-filter:
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
-    - tls://1.0.0.1/dns-query
-    - tls://dns.goole:853  
-# interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
-tun:
-  enable: true
-  stack: gvisor # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
-  dns-hijack:
-    - 198.18.0.2:53 # 请勿更改
-  auto-route: true
-  auto-detect-interface: true # 自动检测出口网卡
 proxies:
-  - {name: Relay_🇸🇬SG-🇸🇬SG_953, server: sg2.verypinknipple.xyz, port: 80, type: vmess, uuid: 14183762-5839-35d4-b9ac-be5f708f1888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: sg2.verypinknipple.xyz}, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_859, server: ru.testx.eu.org, port: 10001, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_341, server: jmcm.rokishi.cyou, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2024, server: us2.verypinknipple.xyz, port: 80, type: vmess, uuid: 14183762-5839-35d4-b9ac-be5f708f1888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us2.verypinknipple.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_342, server: 120.232.141.100, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458, udp: true}
-  - {name: US_1661, server: 38.143.66.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR_451, server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR_441, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: FR_436, server: 62.210.209.50, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1665, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR_450, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR_458, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR_452, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR_462, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1673, server: 38.91.102.86, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: FR_454, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1698, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1683, server: 38.91.102.86, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1686, server: 38.91.102.86, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2297, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1671, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1657, server: 38.91.102.96, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1679, server: 38.91.102.86, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1895, server: 38.91.102.96, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1680, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1678, server: 38.91.102.86, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1659, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1670, server: 38.91.102.86, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1664, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1682, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1676, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1672, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1697, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1707, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1674, server: 38.91.102.86, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1675, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_2296, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1677, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1700, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1691, server: 38.91.102.86, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1690, server: 38.91.102.86, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1685, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2288, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2298, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: AU_72, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: DE_381, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
-  - {name: ZZ_2286, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR_465, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1644, server: 38.91.102.86, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_2289, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_2165, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2166, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2170, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1660, server: 38.91.102.96, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_2294, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1699, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1666, server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1687, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1668, server: 172.99.190.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1703, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2295, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1667, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_438, server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b, udp: true}
-  - {name: Relay_🇮🇱IL-🇮🇱IL_589, server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW, udp: true}
-  - {name: ZZ_2277, server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1663, server: 38.91.102.96, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1928, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA_299, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_2162, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU_80, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1655, server: 38.91.102.96, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_294, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_🇩🇰DK-🇩🇰DK_415, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw, udp: true}
-  - {name: _22, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_🇨🇭CH-🇨🇭CH_335, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
-  - {name: Relay_-🇫🇷FR_21, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_-🇷🇺RU_48, server: t7.ssrsub.com, port: 8443, type: trojan, password: da8ad13d-19e6-4a28-82a6-da15bbc0a968, sni: t7.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: 翻墙党fanqiangdang.com_CN_4, server: sl201.jdxx.xyz, port: 25985, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
+  - {name: Relay_ |31.15Mb, server: 123.59.72.193, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |30.28Mb, server: 123.59.87.29, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |28.54Mb, server: 106.75.233.91, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |37.68Mb, server: 113.31.155.165, port: 3389, type: trojan, password: 032532644f4fd784, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |11.69Mb, server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}, udp: true}
+  - {name: "|13.92Mb", server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 翻墙党fanqiangdang.com_US_39, server: amu1ahfi.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
+  - {name: 翻墙党fanqiangdang.com_US_18, server: 70.39.67.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
+  - {name: "|27.94Mb", server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "|17.83Mb", server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "|28.63Mb", server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "|19.38Mb", server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "|11.63Mb", server: 142.202.48.43, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "|25.05Mb", server: 62.210.209.50, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "|11.12Mb", server: 142.202.48.43, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "|11.33Mb", server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "|11.22Mb", server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "|12.00Mb", server: 142.202.48.43, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "|19.98Mb", server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "|16.64Mb", server: 62.210.209.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 翻墙党fanqiangdang.com_US_2, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: "|18.73Mb", server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: "|11.37Mb", server: 142.202.48.43, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "|14.27Mb", server: 142.202.48.43, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "| 5.67Mb", server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _1936 | 0.91Mb, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "|15.02Mb", server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "|11.56Mb", server: 142.202.48.43, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "| 3.33Mb", server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "| 1.00Mb", server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _2016 | 0.55Mb, server: 38.143.66.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _2176 | 0.16Mb, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "| 5.79Mb", server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "| 2.85Mb", server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "| 4.27Mb", server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 翻墙党fanqiangdang.com_GB_31, server: 172.99.190.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "| 6.31Mb", server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 翻墙党fanqiangdang.com_NL_5, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6, udp: true}
+  - {name: "| 5.40Mb", server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "| 1.09Mb", server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "| 2.69Mb", server: 38.143.66.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1003 | 3.82Mb, server: 38.143.66.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Relay_ | 9.64Mb, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw, udp: true}
+  - {name: "| 4.36Mb", server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 翻墙党fanqiangdang.com_HU_15, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy, udp: true}
+  - {name: Relay_ | 4.07Mb, server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF, udp: true}
+  - {name: Relay_ | 8.56Mb, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH, udp: true}
+  - {name: _1990 | 0.12Mb, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 翻墙党fanqiangdang.com_RU_7, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
+  - {name: Relay_ | 5.00Mb, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_ |540.57Mb, server: sg27.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: sg27.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_ | 4.48Mb, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "| 2.33Mb", server: 172.99.190.87, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -378,83 +256,60 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -465,248 +320,179 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -722,83 +508,60 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇸🇬SG-🇸🇬SG_953
-      - Relay_🇷🇺RU-🇷🇺RU_859
-      - Relay_🇨🇳CN-🇸🇬SG_341
-      - Relay_🇺🇸US-🇺🇸US_2024
-      - Relay_🇨🇳CN-🇸🇬SG_342
-      - US_1661
-      - FR_451
-      - FR_441
-      - FR_436
-      - US_1665
-      - FR_450
-      - FR_458
-      - FR_452
-      - FR_462
-      - US_1673
-      - FR_454
-      - US_1698
-      - US_1683
-      - US_1686
-      - ZZ_2297
-      - US_1671
-      - US_1657
-      - US_1679
-      - US_1895
-      - US_1680
-      - US_1678
-      - US_1659
-      - US_1670
-      - US_1664
-      - US_1682
-      - US_1676
-      - US_1672
-      - US_1697
-      - US_1707
-      - US_1674
-      - US_1675
-      - ZZ_2296
-      - US_1677
-      - US_1700
-      - US_1691
-      - US_1690
-      - US_1685
-      - ZZ_2288
-      - ZZ_2298
-      - AU_72
-      - DE_381
-      - ZZ_2286
-      - FR_465
-      - US_1644
-      - ZZ_2289
-      - ZZ_2165
-      - ZZ_2166
-      - ZZ_2170
-      - US_1660
-      - ZZ_2294
-      - US_1699
-      - US_1666
-      - US_1687
-      - US_1668
-      - US_1703
-      - ZZ_2295
-      - US_1667
-      - Relay_🇫🇷FR-🇫🇷FR_438
-      - Relay_🇮🇱IL-🇮🇱IL_589
-      - ZZ_2277
-      - US_1663
-      - US_1928
-      - CA_299
-      - ZZ_2162
-      - AU_80
-      - US_1655
-      - CA_294
-      - Relay_🇩🇰DK-🇩🇰DK_415
-      - _22
-      - Relay_🇨🇭CH-🇨🇭CH_335
-      - Relay_-🇫🇷FR_21
-      - Relay_-🇷🇺RU_48
+      - 翻墙党fanqiangdang.com_CN_4
+      - Relay_ |31.15Mb
+      - Relay_ |30.28Mb
+      - Relay_ |28.54Mb
+      - Relay_ |37.68Mb
+      - Relay_ |11.69Mb
+      - "|13.92Mb"
+      - 翻墙党fanqiangdang.com_US_39
+      - 翻墙党fanqiangdang.com_US_18
+      - "|27.94Mb"
+      - "|17.83Mb"
+      - "|28.63Mb"
+      - "|19.38Mb"
+      - "|11.63Mb"
+      - "|25.05Mb"
+      - "|11.12Mb"
+      - "|11.33Mb"
+      - "|11.22Mb"
+      - "|12.00Mb"
+      - "|19.98Mb"
+      - "|16.64Mb"
+      - 翻墙党fanqiangdang.com_US_2
+      - "|18.73Mb"
+      - "|11.37Mb"
+      - "|14.27Mb"
+      - "| 5.67Mb"
+      - _1936 | 0.91Mb
+      - "|15.02Mb"
+      - "|11.56Mb"
+      - "| 3.33Mb"
+      - "| 1.00Mb"
+      - _2016 | 0.55Mb
+      - _2176 | 0.16Mb
+      - "| 5.79Mb"
+      - "| 2.85Mb"
+      - "| 4.27Mb"
+      - 翻墙党fanqiangdang.com_GB_31
+      - "| 6.31Mb"
+      - 翻墙党fanqiangdang.com_NL_5
+      - "| 5.40Mb"
+      - "| 1.09Mb"
+      - "| 2.69Mb"
+      - US_1003 | 3.82Mb
+      - Relay_ | 9.64Mb
+      - "| 4.36Mb"
+      - 翻墙党fanqiangdang.com_HU_15
+      - Relay_ | 4.07Mb
+      - Relay_ | 8.56Mb
+      - _1990 | 0.12Mb
+      - 翻墙党fanqiangdang.com_RU_7
+      - Relay_ | 5.00Mb
+      - Relay_ |540.57Mb
+      - Relay_ | 4.48Mb
+      - "| 2.33Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
