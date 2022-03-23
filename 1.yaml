@@ -5,363 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "|69.89Mb", server: 172.105.58.152, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Relay_ |41.52Mb, server: 101.89.109.30, port: 10015, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|69.91Mb", server: 172.105.35.151, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "|27.84Mb", server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "|66.68Mb", server: 172.105.58.152, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Relay_ |24.47Mb, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
-  - {name: FR_475, server: 95.142.175.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: tkAx1ehPPkMN, udp: true}
-  - {name: "|23.26Mb", server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|13.21Mb", server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|27.86Mb", server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|59.31Mb", server: 172.105.35.151, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|16.63Mb", server: 38.143.66.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|15.56Mb", server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|17.48Mb", server: 198.57.27.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|16.61Mb", server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|10.95Mb", server: 169.197.141.244, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|11.64Mb", server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "| 3.99Mb", server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|17.55Mb", server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|10.67Mb", server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|17.03Mb", server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|15.22Mb", server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|17.60Mb", server: 198.57.27.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|10.27Mb", server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|11.75Mb", server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|17.49Mb", server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|17.71Mb", server: 134.195.196.110, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|18.04Mb", server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|21.43Mb", server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|20.08Mb", server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|17.34Mb", server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|16.96Mb", server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|18.38Mb", server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|11.09Mb", server: 198.57.27.152, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|17.47Mb", server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|11.40Mb", server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|18.08Mb", server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|16.13Mb", server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|11.35Mb", server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "|17.60Mb 2", server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|10.87Mb", server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "|11.03Mb", server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|15.95Mb", server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|18.44Mb", server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|11.82Mb", server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_ |19.61Mb, server: 45.141.152.178, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr, udp: true}
-  - {name: "|17.40Mb", server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: "|12.31Mb", server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|11.46Mb", server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: "|17.53Mb", server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "| 8.56Mb", server: 212.38.189.174, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|26.27Mb", server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|11.15Mb", server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|10.93Mb", server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|11.78Mb", server: 198.57.27.172, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "| 9.80Mb", server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "| 8.86Mb", server: 212.38.189.174, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: "| 8.67Mb", server: 212.38.189.174, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "| 8.93Mb", server: 212.38.189.174, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|32.28Mb", server: 37.218.245.122, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fPn40BnheGrB, udp: true}
-  - {name: "| 8.68Mb", server: 212.38.189.174, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|17.80Mb", server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|13.13Mb", server: 198.57.27.184, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "| 8.47Mb", server: 212.38.189.174, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|17.54Mb", server: 134.195.196.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|19.63Mb", server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|17.33Mb", server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|13.10Mb", server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "|11.33Mb", server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|11.34Mb", server: 169.197.141.240, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Relay_ | 8.09Mb, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6, udp: true}
-  - {name: "|17.41Mb", server: 134.195.196.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|18.79Mb", server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "|17.34Mb 2", server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|11.90Mb", server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_ | 8.69Mb, server: 37.120.137.82, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
-  - {name: "|24.71Mb", server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG, udp: true}
-  - {name: "|17.34Mb 3", server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|18.03Mb", server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|13.34Mb", server: 38.68.134.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_ | 5.52Mb, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP, udp: true}
-  - {name: "|11.36Mb", server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "|17.17Mb", server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "|12.63Mb", server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2691 | 9.92Mb, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "|22.11Mb", server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
+  - {name: "| 7.48Mb", server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "| 6.39Mb", server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "| 2.49Mb", server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: "SG,", server: 54.248.33.63, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "US,", server: 35.88.222.161, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "JP, 2", server: 54.238.220.147, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "TW,", server: 15.165.77.88, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "CA,", server: 54.202.222.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "JP, 3", server: 3.36.52.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK,", server: 54.169.233.50, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK, 2", server: 13.125.123.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -380,91 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -475,272 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -756,91 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|69.89Mb"
-      - Relay_ |41.52Mb
-      - "|69.91Mb"
-      - "|27.84Mb"
-      - "|66.68Mb"
-      - Relay_ |24.47Mb
-      - FR_475
-      - "|23.26Mb"
-      - "|13.21Mb"
-      - "|27.86Mb"
-      - "|59.31Mb"
-      - "|16.63Mb"
-      - "|15.56Mb"
-      - "|17.48Mb"
-      - "|16.61Mb"
-      - "|10.95Mb"
-      - "|11.64Mb"
-      - "| 3.99Mb"
-      - "|17.55Mb"
-      - "|10.67Mb"
-      - "|17.03Mb"
-      - "|15.22Mb"
-      - "|17.60Mb"
-      - "|10.27Mb"
-      - "|11.75Mb"
-      - "|17.49Mb"
-      - "|17.71Mb"
-      - "|18.04Mb"
-      - "|21.43Mb"
-      - "|20.08Mb"
-      - "|17.34Mb"
-      - "|16.96Mb"
-      - "|18.38Mb"
-      - "|11.09Mb"
-      - "|17.47Mb"
-      - "|11.40Mb"
-      - "|18.08Mb"
-      - "|16.13Mb"
-      - "|11.35Mb"
-      - "|17.60Mb 2"
-      - "|10.87Mb"
-      - "|11.03Mb"
-      - "|15.95Mb"
-      - "|18.44Mb"
-      - "|11.82Mb"
-      - Relay_ |19.61Mb
-      - "|17.40Mb"
-      - "|12.31Mb"
-      - "|11.46Mb"
-      - "|17.53Mb"
-      - "| 8.56Mb"
-      - "|26.27Mb"
-      - "|11.15Mb"
-      - "|10.93Mb"
-      - "|11.78Mb"
-      - "| 9.80Mb"
-      - "| 8.86Mb"
-      - "| 8.67Mb"
-      - "| 8.93Mb"
-      - "|32.28Mb"
-      - "| 8.68Mb"
-      - "|17.80Mb"
-      - "|13.13Mb"
-      - "| 8.47Mb"
-      - "|17.54Mb"
-      - "|19.63Mb"
-      - "|17.33Mb"
-      - "|13.10Mb"
-      - "|11.33Mb"
-      - "|11.34Mb"
-      - Relay_ | 8.09Mb
-      - "|17.41Mb"
-      - "|18.79Mb"
-      - "|17.34Mb 2"
-      - "|11.90Mb"
-      - Relay_ | 8.69Mb
-      - "|24.71Mb"
-      - "|17.34Mb 3"
-      - "|18.03Mb"
-      - "|13.34Mb"
-      - Relay_ | 5.52Mb
-      - "|11.36Mb"
-      - "|17.17Mb"
-      - "|12.63Mb"
-      - ZZ_2691 | 9.92Mb
+      - "|22.11Mb"
+      - "| 7.48Mb"
+      - "| 6.39Mb"
+      - "| 2.49Mb"
+      - SG,
+      - US,
+      - JP, 2
+      - TW,
+      - CA,
+      - JP, 3
+      - HK,
+      - HK, 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
