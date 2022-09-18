@@ -5,187 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _HK_香港, server: 47.242.104.161, port: 32406, type: vmess, uuid: 4a1eaf72-a555-4737-bb09-8c388c118c5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.104.161]}}, udp: true}
-  - {name: _HK_香港 2, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.236.239]}}, udp: true}
-  - {name: _JP_日本, server: c10s4.jamjams3.net, port: 5668, type: vmess, uuid: 218f5fce-317a-43ca-8b5b-a25e772b5063, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾, server: 96tw.tfzhc.top, port: 443, type: trojan, password: 0e1728b8-d891-467f-95a4-9254a6a6d6e3, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 3, server: 8.210.253.214, port: 63586, type: vmess, uuid: c83db083-ff44-4727-899f-02d501e68d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.253.214]}}, udp: true}
-  - {name: _HK_香港 4, server: 8.210.212.41, port: 22303, type: vmess, uuid: a0775aec-e4f8-4d5d-aad0-e50ccff0a7dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.212.41]}}, udp: true}
-  - {name: _HK_香港 5, server: 47.242.18.21, port: 44850, type: vmess, uuid: 4e390bc8-a22a-49e0-a538-d1b6da917677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.18.21]}}, udp: true}
-  - {name: _SG_新加坡, server: 139.177.189.122, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 6, server: 47.242.177.115, port: 46675, type: vmess, uuid: ac10c2ce-b233-4ea2-bf70-2dfc5721c8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.177.115]}}, udp: true}
-  - {name: _HK_香港 7, server: 47.243.124.141, port: 41179, type: vmess, uuid: a50b1dc4-03ce-44d8-a5c4-f4753c57884e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.124.141]}}, udp: true}
-  - {name: _HK_香港 8, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
-  - {name: CN 1 | @Airproxies, server: 183.245.146.20, port: 21001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 2 | @Airproxies, server: 117.164.185.220, port: 11002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 3 | @Airproxies, server: 117.164.185.220, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 4 | @Airproxies, server: 117.164.185.220, port: 61002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 5 | @Airproxies, server: 36.138.100.57, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 6 | @Airproxies, server: 183.245.146.20, port: 21002, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, sni: 103-135-251-39.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN+7+|+@Airproxies, server: 117.164.185.220, port: 61027, type: ss, cipher: chacha20-ietf-poly1305, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, udp: true}
-  - {name: CN+8+|+@Airproxies, server: 117.164.185.220, port: 61026, type: ss, cipher: chacha20-ietf-poly1305, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, udp: true}
-  - {name: CN+9+|+@Airproxies, server: 117.164.185.220, port: 61025, type: ss, cipher: chacha20-ietf-poly1305, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, udp: true}
-  - {name: CN 11 | @Airproxies, server: g.cccao.cyou, port: 16617, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: g.cccao.cyou}}, udp: true}
-  - {name: CN 12 | @Airproxies, server: m.lwvzmdu.cn, port: 16620, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: CN 13 | @Airproxies, server: m.lwvzmdu.cn, port: 16619, type: vmess, uuid: 64727164-7bba-41e0-a6c2-32cbd6d3638f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: US 1 | @Airproxies, server: 178.157.63.155, port: 50182, type: trojan, password: 349667a5-8d06-4a24-b4be-eb02f3ed7bed, skip-cert-verify: true, udp: true}
-  - {name: US 2 | @Airproxies, server: pf.freev2r.xyz, port: 12222, type: trojan, password: e723d01e-130d-4e66-955b-9f964c9c9770, sni: nt3.freev2r.xyz, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@hkaa0|香港|自建, server: hk1.vpnjantit.com, port: 10000, type: vmess, uuid: 1a1046e8-3316-11ed-a5d5-00163e019e6e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: hk1.vpnjantit.com}}, udp: true}
-  - {name: TG频道:@hkaa0|香港|自建 2, server: hk1.vpnjantit.com, port: 10001, type: vmess, uuid: 1a1046e8-3316-11ed-a5d5-00163e019e6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: hk1.vpnjantit.com}}, udp: true}
-  - {name: _21, server: 134.195.196.143, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _HK_香港 9, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.84.180]}}, udp: true}
-  - {name: _CN_中国, server: 913hk.tfzhc.top, port: 443, type: trojan, password: 0ba47cb6-e316-4afe-bb35-9e4853db6447, sni: 913hk.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: 910.48x.cc, port: 19374, type: ss, cipher: chacha20-ietf-poly1305, password: 90574f4f-9533-4fb1-afb1-2e48e57e1f0b, udp: true}
-  - {name: _HK_香港 10, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.136.17]}}, udp: true}
-  - {name: _HK_香港 11, server: 47.242.203.43, port: 23501, type: vmess, uuid: 7b3f0c3e-5ba1-430f-b8e5-dcff591f93bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.203.43]}}, udp: true}
-  - {name: _HK_香港 12, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
-  - {name: _HK_香港 13, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 2, server: 172.105.222.177, port: 443, type: trojan, password: ef81a036-1db9-45ed-a3aa-f932a4750066, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2, server: 911hk02.tfzhc.top, port: 35689, type: trojan, password: 0ba47cb6-e316-4afe-bb35-9e4853db6447, sni: 911hk02.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 3, server: 18.140.67.76, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 4, server: 13.213.0.239, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 5, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾 2, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: 0ba47cb6-e316-4afe-bb35-9e4853db6447, skip-cert-verify: true, udp: true}
+  - {name: 【直连】HKG/香港 - 80端口 - 1, server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com, port: 80, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com}}, udp: true}
+  - {name: 【直连】HKG/香港 - 443端口 - 2, server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com, port: 443, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com}}, udp: true}
+  - {name: 【直连】HKG/香港 - 1, server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com, port: 52356, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【直连】HKG/香港 - 2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 14.29.124.174, port: 11034, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾, server: 42.49.119.3, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-3.13MB/s(Youtube:不良林), server: freehk.ydnode.us, port: 80, type: trojan, password: d6ed263c-3f14-44db-bfee-cfcc26b234d1, skip-cert-verify: true, udp: true}
+  - {name: 【测试】香港UDomain, server: 103.92.86.76, port: 23456, type: ss, cipher: chacha20-ietf-poly1305, password: ggp1006, udp: true}
+  - {name: 新加坡 免流 x1, server: v1.emovpn.xyz, port: 80, type: vmess, uuid: 6d0bb443-8847-4eed-845b-acf127531afb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: _HK_香港, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.84.180]}}, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet2 | 解锁流媒体, server: download2tw.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT | 解锁流媒体, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-河移 | 解锁流媒体, server: 36.137.102.237, port: 30070, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: 香港🇭🇰, server: awshk.linuxonezzm.ga, port: 8080, type: vmess, uuid: e1b861d6-849e-4c41-a62b-d695d9264776, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: awshk.linuxonezzm.ga}}, udp: true}
+  - {name: 新加坡🇸🇬, server: awsxjp.linuxonezzm.ga, port: 8080, type: vmess, uuid: e1b861d6-849e-4c41-a62b-d695d9264776, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: awsxjp.linuxonezzm.ga}}, udp: true}
+  - {name: _CN_中国, server: 915sg77.tfzhc.top, port: 25678, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国 2, server: 43.155.60.88, port: 29882, type: vmess, uuid: 0071947c-daab-4a02-a63c-8f52ba9429c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.155.60.88]}}, udp: true}
+  - {name: _CN_中国 3, server: 43.155.93.16, port: 50044, type: vmess, uuid: 27ddeff3-bf6a-4b02-9f48-4c676cdef59a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.155.93.16]}}, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 42.49.119.22, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _HK_香港 2, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
+  - {name: _HK_香港 3, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.236.239]}}, udp: true}
+  - {name: _HK_香港 4, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.84.180]}}, udp: true}
+  - {name: _HK_香港 5, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
+  - {name: _HK_香港 6, server: 47.242.48.24, port: 54550, type: vmess, uuid: 0f2d7b3f-e144-4e97-867c-d07f49f6251d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.48.24]}}, udp: true}
+  - {name: _JP_日本, server: 45.78.54.36, port: 50128, type: trojan, password: c466028e-c69e-4f8f-bda2-66476de2c8e6, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 2, server: 45.78.54.36, port: 50134, type: trojan, password: 3ebff89d-8a2a-4620-aa71-1a7dd8561e8e, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 3, server: 45.78.54.36, port: 50020, type: trojan, password: b1593d7b-af38-40fc-a469-df07fad47683, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 4, server: musashino.freetrade.link, port: 443, type: trojan, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡, server: 54.255.235.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 2, server: 81.90.189.229, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _SG_新加坡 3, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 4, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 5, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,208 +176,182 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
       - _HK_香港 2
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _HK_香港 9
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
-      - _TW_台湾 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -421,47 +367,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 【直连】HKG/香港 - 80端口 - 1
+      - 【直连】HKG/香港 - 443端口 - 2
+      - 【直连】HKG/香港 - 1
+      - 【直连】HKG/香港 - 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-3.13MB/s(Youtube:不良林)
+      - 【测试】香港UDomain
+      - 新加坡 免流 x1
       - _HK_香港
+      - 台湾Hinet | 解锁流媒体
+      - 台湾Hinet2 | 解锁流媒体
+      - 香港HKT | 解锁流媒体
+      - 香港HKT-河移 | 解锁流媒体
+      - 香港🇭🇰
+      - 新加坡🇸🇬
+      - _CN_中国
+      - _CN_中国 2
+      - _CN_中国 3
+      - _CN_中国->🇸🇬_SG_新加坡
       - _HK_香港 2
-      - _JP_日本
-      - _TW_台湾
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _SG_新加坡
       - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - CN 1 | @Airproxies
-      - CN 2 | @Airproxies
-      - CN 3 | @Airproxies
-      - CN 4 | @Airproxies
-      - CN 5 | @Airproxies
-      - CN 6 | @Airproxies
-      - CN+7+|+@Airproxies
-      - CN+8+|+@Airproxies
-      - CN+9+|+@Airproxies
-      - CN 11 | @Airproxies
-      - CN 12 | @Airproxies
-      - CN 13 | @Airproxies
-      - US 1 | @Airproxies
-      - US 2 | @Airproxies
-      - TG频道:@hkaa0|香港|自建
-      - TG频道:@hkaa0|香港|自建 2
-      - _21
-      - _HK_香港 9
-      - _CN_中国
-      - _CN_中国->🇺🇸_US_美国
-      - _HK_香港 10
-      - _HK_香港 11
-      - _HK_香港 12
-      - _HK_香港 13
+      - _JP_日本
       - _JP_日本 2
+      - _JP_日本 3
+      - _JP_日本 4
+      - _SG_新加坡
       - _SG_新加坡 2
       - _SG_新加坡 3
       - _SG_新加坡 4
       - _SG_新加坡 5
-      - _TW_台湾 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
