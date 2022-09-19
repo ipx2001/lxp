@@ -5,159 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【直连】HKG/香港 - 80端口 - 1, server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com, port: 80, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com}}, udp: true}
-  - {name: 【直连】HKG/香港 - 443端口 - 2, server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com, port: 443, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com}}, udp: true}
-  - {name: 【直连】HKG/香港 - 1, server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com, port: 52356, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【直连】HKG/香港 - 2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: d92ee359-fad4-4684-b097-433b47b16856, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: 14.29.124.174, port: 11034, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 42.49.119.3, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港-3.13MB/s(Youtube:不良林), server: freehk.ydnode.us, port: 80, type: trojan, password: d6ed263c-3f14-44db-bfee-cfcc26b234d1, skip-cert-verify: true, udp: true}
-  - {name: 【测试】香港UDomain, server: 103.92.86.76, port: 23456, type: ss, cipher: chacha20-ietf-poly1305, password: ggp1006, udp: true}
-  - {name: 新加坡 免流 x1, server: v1.emovpn.xyz, port: 80, type: vmess, uuid: 6d0bb443-8847-4eed-845b-acf127531afb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: _HK_香港, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.84.180]}}, udp: true}
-  - {name: 台湾Hinet | 解锁流媒体, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet2 | 解锁流媒体, server: download2tw.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT | 解锁流媒体, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT-河移 | 解锁流媒体, server: 36.137.102.237, port: 30070, type: trojan, password: 71e55461-1f57-4a1e-a6a7-f3fccb908544, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港🇭🇰, server: awshk.linuxonezzm.ga, port: 8080, type: vmess, uuid: e1b861d6-849e-4c41-a62b-d695d9264776, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: awshk.linuxonezzm.ga}}, udp: true}
-  - {name: 新加坡🇸🇬, server: awsxjp.linuxonezzm.ga, port: 8080, type: vmess, uuid: e1b861d6-849e-4c41-a62b-d695d9264776, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: awsxjp.linuxonezzm.ga}}, udp: true}
-  - {name: _CN_中国, server: 915sg77.tfzhc.top, port: 25678, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国 2, server: 43.155.60.88, port: 29882, type: vmess, uuid: 0071947c-daab-4a02-a63c-8f52ba9429c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.155.60.88]}}, udp: true}
-  - {name: _CN_中国 3, server: 43.155.93.16, port: 50044, type: vmess, uuid: 27ddeff3-bf6a-4b02-9f48-4c676cdef59a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.155.93.16]}}, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 42.49.119.22, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: t.me/vpnhat, udp: true}
-  - {name: _HK_香港 2, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
-  - {name: _HK_香港 3, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.236.239]}}, udp: true}
-  - {name: _HK_香港 4, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.84.180]}}, udp: true}
-  - {name: _HK_香港 5, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
-  - {name: _HK_香港 6, server: 47.242.48.24, port: 54550, type: vmess, uuid: 0f2d7b3f-e144-4e97-867c-d07f49f6251d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.48.24]}}, udp: true}
-  - {name: _JP_日本, server: 45.78.54.36, port: 50128, type: trojan, password: c466028e-c69e-4f8f-bda2-66476de2c8e6, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 2, server: 45.78.54.36, port: 50134, type: trojan, password: 3ebff89d-8a2a-4620-aa71-1a7dd8561e8e, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 3, server: 45.78.54.36, port: 50020, type: trojan, password: b1593d7b-af38-40fc-a469-df07fad47683, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 4, server: musashino.freetrade.link, port: 443, type: trojan, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: 54.255.235.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2, server: 81.90.189.229, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _SG_新加坡 3, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 4, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 5, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: iplchk1.bitznet.one, port: 34443, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 3, server: iplchk3.bitznet.one, port: 34000, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇰🇷_KR_韩国, server: iplcsk1.bitznet.one, port: 34005, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: iplcsg1.bitznet.one, port: 34006, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾, server: tratw1.bitznet.one, port: 32003, type: trojan, password: 2bd47370-421b-422f-99dc-9f9afd909db8, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 3, server: scloud30.jafiyun.world, port: 22030, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 4, server: scloud51.jafiyun.world, port: 22051, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: 8.210.253.214, port: 63586, type: vmess, uuid: c83db083-ff44-4727-899f-02d501e68d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.253.214]}}, udp: true}
+  - {name: _HK_香港 2, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
+  - {name: _HK_香港 3, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.136.17]}}, udp: true}
+  - {name: _HK_香港 4, server: 47.242.203.43, port: 23501, type: vmess, uuid: 7b3f0c3e-5ba1-430f-b8e5-dcff591f93bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.203.43]}}, udp: true}
+  - {name: _HK_香港 5, server: 47.242.177.115, port: 46675, type: vmess, uuid: ac10c2ce-b233-4ea2-bf70-2dfc5721c8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.177.115]}}, udp: true}
+  - {name: _SG_新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 2, server: 52.77.243.140, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇨🇿_CZ_捷克, server: trajp1.bitznet.one, port: 32004, type: trojan, password: 2bd47370-421b-422f-99dc-9f9afd909db8, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 4, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 5, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 6, server: ah.yd01.paopaocloud.cyou, port: 10002, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ah.yd01.paopaocloud.cyou}}, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 7, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: lv2sndwioabiaasw.hjspyto.cn, port: 12344, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: lv2sndwioabiaasw.hjspyto.cn, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 5, server: 116.162.120.25, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 6, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 7, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 8, server: 116.162.120.25, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 36.137.191.123, port: 33431, type: trojan, password: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 2, server: 36.139.153.95, port: 54137, type: vmess, uuid: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.139.153.95}}, udp: true}
+  - {name: _HK_香港 6, server: 47.242.18.21, port: 44850, type: vmess, uuid: 4e390bc8-a22a-49e0-a538-d1b6da917677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.18.21]}}, udp: true}
+  - {name: _HK_香港 7, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
+  - {name: _HK_香港 8, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.236.239]}}, udp: true}
+  - {name: _SG_新加坡 3, server: 54.251.4.31, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: JMS-578029@c702s801.jamjams3.net:21237, server: c702s801.jamjams3.net, port: 21237, type: vmess, uuid: 722c4c77-b7c1-4cf4-880d-0b4843d7b33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JMS-578040@c711s801.jamjams3.net:12788, server: c711s801.jamjams3.net, port: 12788, type: vmess, uuid: a88ed91e-3dfb-4308-8bcb-d5c53e8858e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 巾帼-蝗虫A, server: 64.112.42.53, port: 16999, type: vmess, uuid: 48fb27a4-e6fe-42cf-95bf-103d2318ed5d, alterId: 62, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 巾帼-蝗虫B, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -176,182 +184,194 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
       - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
       - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
       - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -367,40 +387,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】HKG/香港 - 80端口 - 1
-      - 【直连】HKG/香港 - 443端口 - 2
-      - 【直连】HKG/香港 - 1
-      - 【直连】HKG/香港 - 2
       - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港-3.13MB/s(Youtube:不良林)
-      - 【测试】香港UDomain
-      - 新加坡 免流 x1
-      - _HK_香港
-      - 台湾Hinet | 解锁流媒体
-      - 台湾Hinet2 | 解锁流媒体
-      - 香港HKT | 解锁流媒体
-      - 香港HKT-河移 | 解锁流媒体
-      - 香港🇭🇰
-      - 新加坡🇸🇬
-      - _CN_中国
-      - _CN_中国 2
-      - _CN_中国 3
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇰🇷_KR_韩国
       - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - _CN_中国->🇹🇼_TW_台湾 3
+      - _CN_中国->🇹🇼_TW_台湾 4
+      - _HK_香港
       - _HK_香港 2
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
-      - _HK_香港 6
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _JP_日本 4
       - _SG_新加坡
       - _SG_新加坡 2
+      - _CN_中国->🇨🇿_CZ_捷克
+      - _CN_中国->🇭🇰_HK_香港 4
+      - _CN_中国->🇭🇰_HK_香港 5
+      - _CN_中国->🇭🇰_HK_香港 6
+      - _CN_中国->🇭🇰_HK_香港 7
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇹🇼_TW_台湾 5
+      - _CN_中国->🇹🇼_TW_台湾 6
+      - _CN_中国->🇹🇼_TW_台湾 7
+      - _CN_中国->🇹🇼_TW_台湾 8
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇺🇸_US_美国 2
+      - _HK_香港 6
+      - _HK_香港 7
+      - _HK_香港 8
       - _SG_新加坡 3
-      - _SG_新加坡 4
-      - _SG_新加坡 5
+      - JMS-578029@c702s801.jamjams3.net:21237
+      - JMS-578040@c711s801.jamjams3.net:12788
+      - 巾帼-蝗虫A
+      - 巾帼-蝗虫B
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
