@@ -5,183 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _YouTube：全网最强白嫖, server: 3.36.118.190, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _YouTube：全网最强白嫖 2, server: 13.125.228.165, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "台湾+🛩️PapaLaozi\n38", server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖 3, server: 13.250.95.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "| TG频道@baipiaoeverything | 29", server: 220.196.214.169, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: Vm0weGQxTXdNVWRYV0doV1ltdHdUMVp0TVc5V01XeFZVMnhPYWxac1dqQmFWVll3Vm14YWMyTkliRmRpVkZaeVdWZDRZV014WkhGU2JIQk9VbTVDZVZkV1VrdFRNVTVIVm01T2FGSnVRbGhXYlRWRFZFWmFWbGRyV2xCV2EwcFRWVVpSZDFCUlBUMD0=, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-11, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _YouTube：全网最强白嫖 4, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.136.17]}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-17, server: 8.210.212.41, port: 22303, type: vmess, uuid: a0775aec-e4f8-4d5d-aad0-e50ccff0a7dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港 2, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
-  - {name: 台湾2-全原生-广港BGP-1.6x, server: 36.133.227.116, port: 43684, type: ss, cipher: chacha20-ietf-poly1305, password: 3484b4a5-62e3-4c1d-8418-8f9812864ef7, udp: true}
-  - {name: _YouTube：全网最强白嫖 5, server: 8.210.253.214, port: 63586, type: vmess, uuid: c83db083-ff44-4727-899f-02d501e68d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _YouTube：全网最强白嫖 6, server: 3.38.108.94, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 3, server: 8.210.253.214, port: 63586, type: vmess, uuid: c83db083-ff44-4727-899f-02d501e68d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.253.214]}}, udp: true}
+  - {name: TW【付费推荐：gvip.gq】 2, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: TW【付费推荐：gvip.gq】 3, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _HK_香港, server: 47.243.244.200, port: 51535, type: vmess, uuid: 98a2ba95-d179-4563-82be-ea5c897be747, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.244.200]}}, udp: true}
+  - {name: _HK_香港 2, server: 47.243.247.109, port: 53314, type: vmess, uuid: 8c232a9e-6760-43b5-851e-a65b9965b5ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.247.109]}}, udp: true}
+  - {name: _HK_香港 3, server: 47.243.249.85, port: 31230, type: vmess, uuid: 19499d00-ae11-4520-942c-e4b7be10739d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.249.85]}}, udp: true}
+  - {name: _HK_香港 4, server: 47.243.248.22, port: 38120, type: vmess, uuid: 29d435a4-b7fb-44db-9119-4ede4e22c250, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.248.22]}}, udp: true}
+  - {name: _HK_香港 5, server: 47.243.187.152, port: 61847, type: vmess, uuid: af998f95-c214-418c-9ad2-cdf55ed755b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.187.152]}}, udp: true}
+  - {name: _HK_香港 6, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: f033bd38-fe03-4705-883c-e45654eaa082, sni: mzy.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡, server: 927tw01.tfzhc.top, port: 44319, type: trojan, password: 3ad5547b-609b-4f59-916b-afebd85aba7d, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: 3ad5547b-609b-4f59-916b-afebd85aba7d, skip-cert-verify: true, udp: true}
   - {name: TW+1+|+@Airproxies, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 巴基斯坦-tg频道:@bpjzx2-32, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖 7, server: 35.92.36.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _YouTube：全网最强白嫖 8, server: jp06.xiaoqi99.cf, port: 63632, type: vmess, uuid: e2c77239-02ad-4ae8-8b71-77b8ed447919, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp06.xiaoqi99.cf}}, udp: true}
-  - {name: YouTube梦歌|Netflix_94, server: 169.197.143.232, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: YouTube梦歌|Netflix_26, server: 169.197.143.232, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _YouTube：全网最强白嫖 9, server: www.ligonfei.ml, port: 443, type: trojan, password: 56I18FNTIH, sni: www.ligonfei.ml, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_24, server: 169.197.143.232, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: YouTube梦歌|Netflix_107, server: 169.197.143.232, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-24, server: 172.105.235.163, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat}, udp: true}
-  - {name: -tg频道:@bpjzx2-45, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _HK_香港 4, server: 47.242.18.21, port: 44850, type: vmess, uuid: 4e390bc8-a22a-49e0-a538-d1b6da917677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.18.21]}}, udp: true}
-  - {name: US 59 TJN, server: 54.188.171.13, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_22, server: 169.197.143.232, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| TG频道@baipiaoeverything | 13", server: 134.195.196.143, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _HK_香港 5, server: 8.210.212.41, port: 22303, type: vmess, uuid: a0775aec-e4f8-4d5d-aad0-e50ccff0a7dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.212.41]}}, udp: true}
-  - {name: _HK_香港 6, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
-  - {name: _YouTube：全网最强白嫖 10, server: 38.91.102.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: "| TG频道@baipiaoeverything | 98", server: 134.195.196.143, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: YouTube梦歌|Netflix_25, server: 169.197.143.232, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "| TG频道@baipiaoeverything | 38", server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}, udp: true}
-  - {name: YouTube梦歌|Netflix_93, server: 134.195.196.143, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _YouTube：全网最强白嫖 11, server: 99jp.tfzhc.top, port: 443, type: trojan, password: 462a6dca-d63e-48e5-bcb8-10b4fe2123d4, sni: 99jp.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-16, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-19, server: 47.242.177.115, port: 46675, type: vmess, uuid: ac10c2ce-b233-4ea2-bf70-2dfc5721c8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 电信二区(四川), server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 电信三区(江苏), server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 联通二区(北京), server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 联通四区(上海), server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 联通一区(北京), server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-891.5KB/s(Youtube:不良林), server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,199 +112,106 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "台湾+🛩️PapaLaozi\n38"
-      - 香港-tg频道:@bpjzx2-11
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
       - _HK_香港 3
       - _HK_香港 4
       - _HK_香港 5
       - _HK_香港 6
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _TW_台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -408,46 +227,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "台湾+🛩️PapaLaozi\n38"
-      - _YouTube：全网最强白嫖 3
-      - "| TG频道@baipiaoeverything | 29"
-      - 香港-tg频道:@bpjzx2-11
-      - _YouTube：全网最强白嫖 4
+      - TW【付费推荐：gvip.gq】 2
+      - TW【付费推荐：gvip.gq】 3
       - _HK_香港
-      - 香港-tg频道:@bpjzx2-17
       - _HK_香港 2
-      - 台湾2-全原生-广港BGP-1.6x
-      - _YouTube：全网最强白嫖 5
-      - _YouTube：全网最强白嫖 6
       - _HK_香港 3
-      - TW+1+|+@Airproxies
-      - 巴基斯坦-tg频道:@bpjzx2-32
-      - _YouTube：全网最强白嫖 7
-      - _YouTube：全网最强白嫖 8
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_26
-      - _YouTube：全网最强白嫖 9
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_107
-      - 日本-tg频道:@bpjzx2-24
-      - -tg频道:@bpjzx2-45
       - _HK_香港 4
-      - US 59 TJN
-      - YouTube梦歌|Netflix_22
-      - CN
-      - "| TG频道@baipiaoeverything | 13"
       - _HK_香港 5
       - _HK_香港 6
-      - _YouTube：全网最强白嫖 10
-      - "| TG频道@baipiaoeverything | 98"
-      - YouTube梦歌|Netflix_25
-      - "| TG频道@baipiaoeverything | 38"
-      - YouTube梦歌|Netflix_93
-      - _YouTube：全网最强白嫖 11
-      - 香港-tg频道:@bpjzx2-16
-      - 香港-tg频道:@bpjzx2-19
+      - _SG_新加坡
+      - _TW_台湾
+      - TW+1+|+@Airproxies
+      - 巴基斯坦-tg频道:@bpjzx2-32
+      - 电信二区(四川)
+      - 电信三区(江苏)
+      - 联通二区(北京)
+      - 联通四区(上海)
+      - 联通一区(北京)
+      - 新加坡-891.5KB/s(Youtube:不良林)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
