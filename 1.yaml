@@ -5,167 +5,323 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇭🇰_HK_香港, server: iplchk1.bitznet.one, port: 34443, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 3, server: iplchk3.bitznet.one, port: 34000, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国, server: iplcsk1.bitznet.one, port: 34005, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: iplcsg1.bitznet.one, port: 34006, type: trojan, password: 9d40fabf-b2f4-4964-9f83-aca3d42ff582, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: tratw1.bitznet.one, port: 32003, type: trojan, password: 2bd47370-421b-422f-99dc-9f9afd909db8, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 3, server: scloud30.jafiyun.world, port: 22030, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 4, server: scloud51.jafiyun.world, port: 22051, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港, server: 8.210.253.214, port: 63586, type: vmess, uuid: c83db083-ff44-4727-899f-02d501e68d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.253.214]}}, udp: true}
-  - {name: _HK_香港 2, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}, udp: true}
-  - {name: _HK_香港 3, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.136.17]}}, udp: true}
-  - {name: _HK_香港 4, server: 47.242.203.43, port: 23501, type: vmess, uuid: 7b3f0c3e-5ba1-430f-b8e5-dcff591f93bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.203.43]}}, udp: true}
-  - {name: _HK_香港 5, server: 47.242.177.115, port: 46675, type: vmess, uuid: ac10c2ce-b233-4ea2-bf70-2dfc5721c8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.177.115]}}, udp: true}
-  - {name: _SG_新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2, server: 52.77.243.140, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇨🇿_CZ_捷克, server: trajp1.bitznet.one, port: 32004, type: trojan, password: 2bd47370-421b-422f-99dc-9f9afd909db8, sni: cert.bitbyte.one, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 4, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 5, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 6, server: ah.yd01.paopaocloud.cyou, port: 10002, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ah.yd01.paopaocloud.cyou}}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港 7, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇯🇵_JP_日本, server: lv2sndwioabiaasw.hjspyto.cn, port: 12344, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: lv2sndwioabiaasw.hjspyto.cn, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 5, server: 116.162.120.25, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 6, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 7, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 8, server: 116.162.120.25, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: 36.137.191.123, port: 33431, type: trojan, password: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国 2, server: 36.139.153.95, port: 54137, type: vmess, uuid: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.139.153.95}}, udp: true}
-  - {name: _HK_香港 6, server: 47.242.18.21, port: 44850, type: vmess, uuid: 4e390bc8-a22a-49e0-a538-d1b6da917677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.18.21]}}, udp: true}
-  - {name: _HK_香港 7, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.156.146]}}, udp: true}
-  - {name: _HK_香港 8, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.236.239]}}, udp: true}
-  - {name: _SG_新加坡 3, server: 54.251.4.31, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: JMS-578029@c702s801.jamjams3.net:21237, server: c702s801.jamjams3.net, port: 21237, type: vmess, uuid: 722c4c77-b7c1-4cf4-880d-0b4843d7b33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JMS-578040@c711s801.jamjams3.net:12788, server: c711s801.jamjams3.net, port: 12788, type: vmess, uuid: a88ed91e-3dfb-4308-8bcb-d5c53e8858e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巾帼-蝗虫A, server: 64.112.42.53, port: 16999, type: vmess, uuid: 48fb27a4-e6fe-42cf-95bf-103d2318ed5d, alterId: 62, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巾帼-蝗虫B, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港04 | 直连 | 免流 | 1.0x | V1, server: 20.239.86.13, port: 80, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: a.189.cn}}, udp: true}
+  - {name: V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40279, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40271, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#337|广东-香港HGC|x2.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40337, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V3-#56|广东-香港|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40056, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V4-#243|广东-香港HKT|x2.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40243, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#136|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40136, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#302|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40302, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#242|广东-香港HKT|x1.2|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40242, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#170|CN2-香港HKBN|x2.0|SSR, server: bf98.cdn.node.a.ddns-ounk.com, port: 40170, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#233|广东-香港HKT|NF|x1.5|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40233, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#174|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40174, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#257|广东-香港HKT|x1.5|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40257, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#305|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40305, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#330|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40330, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40203, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#329|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40329, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#266|广东-香港HKT|x1.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40266, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#265|广东-香港HKT|x1.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40265, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#172|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40172, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: Asia 香港02 | 直连 | 免流 | 1.0x | V1, server: 20.187.102.145, port: 80, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: a.189.cn}}, udp: true}
+  - {name: V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40341, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#104|cn2-新加坡|x1.5|SSR, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40104, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: Asia 香港01 | 直连 | 免流 | 1.0x | V1, server: 20.205.61.148, port: 8080, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 20.205.61.148}}, udp: true}
+  - {name: V1-#303|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40303, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: Asia 香港05 | Netflix | 直连 | 1.0x | V1, server: 18.162.225.60, port: 39000, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 18.162.225.60}}, udp: true}
+  - {name: JP 日本01 | 中转 | 1.0x | V1, server: 20.205.101.73, port: 21510, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 138.2.33.57}}, udp: true}
+  - {name: V3-#66|广东-香港HKT|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40066, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: Asia 香港07 | Netflix | 直连 | 1.0x | V1, server: 20.205.114.194, port: 80, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 20.205.114.194}}, udp: true}
+  - {name: KR 韩国01 | 中转 | 1.0x | V1, server: 20.205.101.73, port: 33893, type: vmess, uuid: 93bc43ff-c604-3819-a143-555bcdf8499e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 20.249.101.198}}, udp: true}
+  - {name: V3-#54|广东-香港HKBN|x1.5|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40054, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#232|广东-香港HKBN|NF|x1.2|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40232, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V1-#304|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40304, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V3-#234|广东-香港HKT|NF|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40234, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V4-#195|广东-香港|x1.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40195, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V3-#278|广东-香港HKBN|x1.5|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40278, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V2-#274|广东-香港HKBN|x1.0|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40274, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: V4-#18|广东-香港|x1.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40018, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: 阿根廷|tg频道:@ripaojiedian, server: yc.safetelescope.cc, port: 21563, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124915:ITy2ClxQDV, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 台湾原生中转, server: zz.wumaojichang.ml, port: 35768, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tw.wumaojichang.ml, headers: {Host: zz.wumaojichang.ml}}, udp: true}
+  - {name: 德国, server: 172.105.85.18, port: 18698, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国, server: mg.wumaojichang.ml, port: 36501, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg.wumaojichang.ml}}, udp: true}
+  - {name: 印度, server: in.wumaojichang.ml, port: 35502, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: in.wumaojichang.ml}}, udp: true}
+  - {name: 印度2, server: in2.wumaojichang.ml, port: 35503, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: in2.wumaojichang.ml}}, udp: true}
+  - {name: 美国纽约, server: mg2.wumaojichang.ml, port: 23983, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg2.wumaojichang.ml}}, udp: true}
+  - {name: 美国旧金山, server: jjs.loc-m.xyz, port: 56742, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: 新加坡, server: sg4.wumaojichang.ml, port: 35504, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg4.wumaojichang.ml}}, udp: true}
+  - {name: 日本骨干网🇯🇵3, server: jp3.wumaojichang.ml, port: 35774, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz-1.wumaojichang.ml, headers: {Host: jp3.wumaojichang.ml}}, udp: true}
+  - {name: 日本骨干网🇯🇵1, server: jp1.wumaojichang.ml, port: 35775, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: 日本骨干网🇯🇵4, server: jp4.wumaojichang.ml, port: 35766, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp4.wumaojichang.ml}}, udp: true}
+  - {name: 新加坡骨干网🇸🇬4, server: sg5.wumaojichang.ml, port: 35731, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港骨干网🇭🇰1, server: hk.wumaojichang.ml, port: 35781, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hk.wumaojichang.ml, headers: {Host: hk.wumaojichang.ml}}, udp: true}
+  - {name: 香港骨干网🇭🇰4, server: hk4.wumaojichang.ml, port: 35768, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.wumaojichang.ml}}, udp: true}
+  - {name: 香港骨干网🇭🇰5, server: hk5.wumaojichang.ml, port: 35788, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hk4.wumaojichang.ml, headers: {Host: hk5.wumaojichang.ml}}, udp: true}
+  - {name: 香港骨干网🇭🇰6, server: hk6.wumaojichang.ml, port: 35769, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk6.wumaojichang.ml}}, udp: true}
+  - {name: 韩国亚马逊-1号 | 解锁流媒体, server: 43.201.43.107, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}, udp: true}
+  - {name: 韩国亚马逊-2号 | 解锁流媒体, server: 13.125.204.239, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}, udp: true}
+  - {name: 台湾Hinet-江苏移动 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 美国洛杉矶-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 美国圣何塞-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 美国西雅图-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 法国-江移 | 解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}, udp: true}
+  - {name: NONE, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 8498bfc8-c030-40df-80e8-69f9e06fe16a, skip-cert-verify: true, udp: true}
+  - {name: 韩国亚马逊-1号 | 解锁流媒体 2, server: 43.201.43.107, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: dc1-download.windowsupdate1.com, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}, udp: true}
+  - {name: 韩国亚马逊-2号 | 解锁流媒体 2, server: 13.125.204.239, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: dc1-download.windowsupdate1.com, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}, udp: true}
+  - {name: vpnpool, server: 106.75.240.227, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: vpnpool 2, server: 113.31.155.165, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: vpnpool 3, server: 113.31.109.30, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: vpnpool 4, server: 106.75.233.91, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: vpnhat, server: 106.75.240.227, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+  - {name: vpnhat 2, server: 113.31.155.165, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+  - {name: vpnhat 3, server: 106.75.233.91, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+  - {name: vpnhat 4, server: 113.31.109.30, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+  - {name: vpnhat 5, server: 120.132.21.219, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+  - {name: vpnhat 6, server: 120.132.12.54, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -184,194 +340,365 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 台湾原生中转
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 台湾Hinet-江苏移动 | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -387,42 +714,81 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇭🇰_HK_香港
-      - _CN_中国->🇭🇰_HK_香港 2
-      - _CN_中国->🇭🇰_HK_香港 3
-      - _CN_中国->🇰🇷_KR_韩国
-      - _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _CN_中国->🇹🇼_TW_台湾 3
-      - _CN_中国->🇹🇼_TW_台湾 4
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _CN_中国->🇨🇿_CZ_捷克
-      - _CN_中国->🇭🇰_HK_香港 4
-      - _CN_中国->🇭🇰_HK_香港 5
-      - _CN_中国->🇭🇰_HK_香港 6
-      - _CN_中国->🇭🇰_HK_香港 7
-      - _CN_中国->🇯🇵_JP_日本
-      - _CN_中国->🇹🇼_TW_台湾 5
-      - _CN_中国->🇹🇼_TW_台湾 6
-      - _CN_中国->🇹🇼_TW_台湾 7
-      - _CN_中国->🇹🇼_TW_台湾 8
-      - _CN_中国->🇺🇸_US_美国
-      - _CN_中国->🇺🇸_US_美国 2
-      - _HK_香港 6
-      - _HK_香港 7
-      - _HK_香港 8
-      - _SG_新加坡 3
-      - JMS-578029@c702s801.jamjams3.net:21237
-      - JMS-578040@c711s801.jamjams3.net:12788
-      - 巾帼-蝗虫A
-      - 巾帼-蝗虫B
+      - Asia 香港04 | 直连 | 免流 | 1.0x | V1
+      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#337|广东-香港HGC|x2.0|SSR
+      - V3-#56|广东-香港|x1.5|SSR
+      - V4-#243|广东-香港HKT|x2.0|SSR
+      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
+      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
+      - V2-#242|广东-香港HKT|x1.2|SSR
+      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - V2-#233|广东-香港HKT|NF|x1.5|SSR
+      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
+      - V2-#257|广东-香港HKT|x1.5|SSR
+      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
+      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
+      - V1-#266|广东-香港HKT|x1.0|SSR
+      - V1-#265|广东-香港HKT|x1.0|SSR
+      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
+      - Asia 香港02 | 直连 | 免流 | 1.0x | V1
+      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
+      - V2-#104|cn2-新加坡|x1.5|SSR
+      - Asia 香港01 | 直连 | 免流 | 1.0x | V1
+      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
+      - Asia 香港05 | Netflix | 直连 | 1.0x | V1
+      - JP 日本01 | 中转 | 1.0x | V1
+      - V3-#66|广东-香港HKT|x1.5|SSR
+      - Asia 香港07 | Netflix | 直连 | 1.0x | V1
+      - KR 韩国01 | 中转 | 1.0x | V1
+      - V3-#54|广东-香港HKBN|x1.5|SSR
+      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
+      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
+      - V3-#234|广东-香港HKT|NF|x1.5|SSR
+      - V4-#195|广东-香港|x1.0|SSR
+      - V3-#278|广东-香港HKBN|x1.5|SSR
+      - V2-#274|广东-香港HKBN|x1.0|SSR
+      - V4-#18|广东-香港|x1.0|SSR
+      - 阿根廷|tg频道:@ripaojiedian
+      - 台湾原生中转
+      - 德国
+      - 美国
+      - 印度
+      - 印度2
+      - 美国纽约
+      - 美国旧金山
+      - 新加坡
+      - 日本骨干网🇯🇵3
+      - 日本骨干网🇯🇵1
+      - 日本骨干网🇯🇵4
+      - 新加坡骨干网🇸🇬4
+      - 香港骨干网🇭🇰1
+      - 香港骨干网🇭🇰4
+      - 香港骨干网🇭🇰5
+      - 香港骨干网🇭🇰6
+      - 韩国亚马逊-1号 | 解锁流媒体
+      - 韩国亚马逊-2号 | 解锁流媒体
+      - 台湾Hinet-江苏移动 | 解锁流媒体
+      - 美国洛杉矶-江移 | 解锁流媒体
+      - 美国圣何塞-江移 | 解锁流媒体
+      - 美国西雅图-江移 | 解锁流媒体
+      - 法国-江移 | 解锁流媒体
+      - NONE
+      - 韩国亚马逊-1号 | 解锁流媒体 2
+      - 韩国亚马逊-2号 | 解锁流媒体 2
+      - vpnpool
+      - vpnpool 2
+      - vpnpool 3
+      - vpnpool 4
+      - vpnhat
+      - vpnhat 2
+      - vpnhat 3
+      - vpnhat 4
+      - vpnhat 5
+      - vpnhat 6
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
