@@ -5,119 +5,631 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK【付费推荐：goo.gs/vip】, server: 159.100.206.88, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 美国无限流量限速15m, server: us2.mybestjj.com, port: 4230, type: vmess, uuid: db452a88-08a0-4a6a-ac87-937bb0b27909, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: us2.mybestjj.com, network: ws, ws-opts: {path: /1654431, headers: {Host: us2.mybestjj.com}}, udp: true}
-  - {name: 中国-289.2KB/s(Youtube:不良林), server: in04.my1188.org, port: 63087, type: vmess, uuid: b28417cd-35b5-31c1-8ace-d5128f60ffad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 中国-464.2KB/s(Youtube:不良林), server: catnet-sg.gatknqh.cn, port: 11021, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 中国-7.83MB/s(Youtube:不良林), server: catnet-moble.gatknqh.cn, port: 11002, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 中国-3.74MB/s(Youtube:不良林), server: catnet-moble.gatknqh.cn, port: 11042, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 中国-9.60MB/s(Youtube:不良林), server: catnet-moble.gatknqh.cn, port: 11046, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 中国-2.63MB/s(Youtube:不良林), server: catnet-moble.gatknqh.cn, port: 11048, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 中国-8.18MB/s(Youtube:不良林), server: catnet-moble.gatknqh.cn, port: 11043, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: _HK_香港, server: 8.210.1.44, port: 63020, type: vmess, uuid: 2afd0c9f-57fa-4773-8686-b480e8be5814, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港 2, server: 47.242.205.255, port: 49935, type: vmess, uuid: 3ffddc7c-80a3-4677-ab9e-30da4190ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港 3, server: 47.242.243.218, port: 48471, type: vmess, uuid: 7daf0d3d-8c74-4f46-8912-fbf59be05e39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港 4, server: 47.242.56.3, port: 37064, type: vmess, uuid: d2a10a17-6191-472c-896b-782331f49fb9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港->🇯🇵_JP_日本, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇸🇬_SG_新加坡, server: 219.76.13.175, port: 443, type: trojan, password: ZlYZ0KxC8uxngp736aR34y3TaFwFOC95DO2XR8yeeAD3cESNDSCBqAYIjpaSlz, sni: python.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇺🇸_US_美国, server: 119.247.119.212, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sg-01.tiktokcdn.top, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇺🇸_US_美国 2, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本, server: jp1.sanfen001.pics, port: 443, type: trojan, password: 4456b502-fe61-4be7-a969-aa37d924dbd2, sni: jp1.sanfen001.pics, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本 2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _JP_日本 3, server: trs07.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs07.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: 8.218.80.207, port: 58793, type: vmess, uuid: 652919af-4b0f-4211-8f06-952958d05038, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _SG_新加坡 2, server: 8.218.85.43, port: 43645, type: vmess, uuid: 0cd2e2c0-ef4f-4a49-a89f-ee2552aed247, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _SG_新加坡 3, server: 8.218.73.227, port: 58641, type: vmess, uuid: 4821f5d8-dc31-4bb4-811c-8babcb8aec1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _SG_新加坡 4, server: 8.218.86.250, port: 22362, type: vmess, uuid: 72356bf7-487b-42c0-a7f2-845136b33503, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 橘子, server: hz.henet.top, port: 40011, type: trojan, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, skip-cert-verify: true, udp: true}
+  - {name: 桔子, server: ct.henet.top, port: 30011, type: trojan, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, skip-cert-verify: true, udp: true}
+  - {name: 苹果, server: ct.henet.top, port: 20011, type: trojan, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, skip-cert-verify: true, udp: true}
+  - {name: 菠萝, server: ct.henet.top, port: 30009, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 香蕉, server: ct.henet.top, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 橙子, server: hz.henet.top, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 西瓜, server: ct.henet.top, port: 20010, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 水蜜桃, server: hz.henet.top, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 猕猴桃, server: ct.henet.top, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 葡萄, server: ct.henet.top, port: 30000, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 石榴, server: ct.henet.top, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 火龙果, server: hz.henet.top, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 牛油果, server: ct.henet.top, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 榴莲, server: ct.henet.top, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 哈密瓜, server: ct.henet.top, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 车厘子, server: hz.henet.top, port: 40003, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 樱桃, server: ct.henet.top, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 桑葚, server: hz.henet.top, port: 40004, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 柚子, server: ct.henet.top, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 椰子, server: hz.henet.top, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 提子, server: ct.henet.top, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 土豆, server: ct.henet.top, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 酸枣, server: ct.henet.top, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 辣条, server: hz.henet.top, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 蛋糕, server: ct.henet.top, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 冰淇淋, server: ct.henet.top, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 鱼豆腐, server: hz.henet.top, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 金针菇, server: ct.henet.top, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 芹菜, server: ct.henet.top, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 西红柿, server: hz.henet.top, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 黄瓜, server: ct.henet.top, port: 30007, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 苦瓜, server: ct.henet.top, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 啤酒, server: hz.henet.top, port: 40007, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 馒头, server: ct.henet.top, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 香菜, server: ct.henet.top, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: 地瓜, server: hz.henet.top, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 6b4ceefe-b296-4d4a-8876-c29a6a5d59f5, udp: true}
+  - {name: "@AntiFilteringChannel شیدای زمانه", server: 165.22.125.250, port: 443, type: trojan, password: bccb6d26-5270-4317-97b6-d46a0c2c7d9b, sni: therealaleph-tj1.gozargah.uk, skip-cert-verify: true, udp: true}
+  - {name: "@Sezar_Sec (SS-Netherlands 2)", server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: t.me/wbnet_🇭🇰_HK_香港_32, server: 119.247.119.212, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: t.me/wbnet_🇺🇸_US_美国_29, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: t.me/wbnet_🇭🇰_HK_香港_36, server: 167.179.32.53, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: "|13.40Mb", server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|18.96Mb", server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 7.68Mb", server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|23.00Mb", server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港01, server: cn01.mynode.me, port: 8101, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港02, server: cn01.mynode.me, port: 8102, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港03, server: cn01.mynode.me, port: 8103, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港04, server: cn01.mynode.me, port: 8104, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港05, server: cn01.mynode.me, port: 8105, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港06, server: cn02.mynode.me, port: 8106, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港07, server: cn02.mynode.me, port: 8107, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港08, server: cn02.mynode.me, port: 8108, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港09, server: cn02.mynode.me, port: 8109, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港10, server: cn02.mynode.me, port: 8110, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港11, server: cn03.mynode.me, port: 8111, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港12, server: cn03.mynode.me, port: 8112, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港13, server: cn03.mynode.me, port: 8113, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港14, server: cn03.mynode.me, port: 8114, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港15, server: cn03.mynode.me, port: 8115, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港16, server: cn04.mynode.me, port: 8116, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港17, server: cn04.mynode.me, port: 8117, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港18, server: cn04.mynode.me, port: 8118, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港19, server: cn04.mynode.me, port: 8119, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港20, server: cn04.mynode.me, port: 8120, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港21, server: cn05.mynode.me, port: 8121, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港22, server: cn05.mynode.me, port: 8122, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港23, server: cn05.mynode.me, port: 8123, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港24, server: cn05.mynode.me, port: 8124, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港25, server: cn05.mynode.me, port: 8125, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 香港26, server: cn05.mynode.me, port: 8126, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 菲律宾01, server: cn02.mynode.me, port: 8231, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 菲律宾02, server: cn03.mynode.me, port: 8232, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 菲律宾03, server: cn05.mynode.me, port: 8233, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡01, server: cn06.mynode.me, port: 8201, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡02, server: cn06.mynode.me, port: 8202, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡03, server: cn06.mynode.me, port: 8203, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡04, server: cn06.mynode.me, port: 8204, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡05, server: cn06.mynode.me, port: 8205, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡06, server: cn07.mynode.me, port: 8206, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡07, server: cn07.mynode.me, port: 8207, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡08, server: cn07.mynode.me, port: 8208, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡09, server: cn08.mynode.me, port: 8209, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡10, server: cn08.mynode.me, port: 8210, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡11, server: cn08.mynode.me, port: 8211, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡12, server: cn08.mynode.me, port: 8212, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡13, server: cn08.mynode.me, port: 8213, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡14, server: cn09.mynode.me, port: 8214, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡15, server: cn09.mynode.me, port: 8215, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡16, server: cn09.mynode.me, port: 8216, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡17, server: cn09.mynode.me, port: 8217, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 新加坡18, server: cn09.mynode.me, port: 8218, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省01, server: cn10.mynode.me, port: 8301, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省02, server: cn10.mynode.me, port: 8302, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省03, server: cn10.mynode.me, port: 8303, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省04, server: cn10.mynode.me, port: 8304, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省05, server: cn20.mynode.me, port: 8305, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 台湾省06, server: cn20.mynode.me, port: 8306, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本01, server: cn11.mynode.me, port: 8401, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本02, server: cn11.mynode.me, port: 8402, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本03, server: cn11.mynode.me, port: 8403, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本04, server: cn12.mynode.me, port: 8404, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本05, server: cn12.mynode.me, port: 8405, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本06, server: cn12.mynode.me, port: 8406, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本07, server: cn12.mynode.me, port: 8407, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本08, server: cn13.mynode.me, port: 8408, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本09, server: cn13.mynode.me, port: 8409, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本10, server: cn14.mynode.me, port: 8410, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本11, server: cn14.mynode.me, port: 8411, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本12, server: cn14.mynode.me, port: 8412, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 日本13, server: cn14.mynode.me, port: 8413, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国01, server: cn15.mynode.me, port: 8501, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国02, server: cn15.mynode.me, port: 8502, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国03, server: cn15.mynode.me, port: 8503, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国04, server: cn15.mynode.me, port: 8504, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国05, server: cn15.mynode.me, port: 8505, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国06, server: cn15.mynode.me, port: 8506, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国07, server: cn16.mynode.me, port: 8507, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国08, server: cn16.mynode.me, port: 8508, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国09, server: cn16.mynode.me, port: 8509, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国10, server: cn16.mynode.me, port: 8510, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国11, server: cn16.mynode.me, port: 8511, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国12, server: cn16.mynode.me, port: 8512, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国13, server: cn16.mynode.me, port: 8513, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国14, server: cn16.mynode.me, port: 8514, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国15, server: cn16.mynode.me, port: 8515, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国16, server: cn16.mynode.me, port: 8516, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国17, server: cn16.mynode.me, port: 8517, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国18, server: cn16.mynode.me, port: 8518, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国19, server: cn18.mynode.me, port: 8519, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国20, server: cn18.mynode.me, port: 8520, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国21, server: cn18.mynode.me, port: 8521, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 美国22, server: cn18.mynode.me, port: 8522, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 英国, server: cn17.mynode.me, port: 8601, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 韩国, server: cn17.mynode.me, port: 8602, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 澳洲, server: cn17.mynode.me, port: 8603, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 荷兰, server: cn17.mynode.me, port: 8604, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 德国, server: cn17.mynode.me, port: 8605, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 印度, server: cn17.mynode.me, port: 8606, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 巴西, server: cn17.mynode.me, port: 8607, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 法国, server: cn17.mynode.me, port: 8610, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 泰国, server: cn17.mynode.me, port: 8616, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 土耳其, server: cn17.mynode.me, port: 8608, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 阿根廷, server: cn17.mynode.me, port: 8609, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 加拿大, server: cn17.mynode.me, port: 8612, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 俄罗斯, server: cn17.mynode.me, port: 8613, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 西班牙, server: cn17.mynode.me, port: 8620, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 以色列, server: cn17.mynode.me, port: 8615, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 马来西亚, server: cn17.mynode.me, port: 8618, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 巴基斯坦, server: cn17.mynode.me, port: 8614, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 哥伦比亚, server: cn17.mynode.me, port: 8619, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
+  - {name: 「官 网」iplc.vip, server: cn01.mynode.me, port: 8101, type: ss, cipher: rc4-md5, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 23045-Qq3323103856.download.microsoft.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,131 +648,669 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,30 +1326,158 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK【付费推荐：goo.gs/vip】
-      - 美国无限流量限速15m
-      - 中国-289.2KB/s(Youtube:不良林)
-      - 中国-464.2KB/s(Youtube:不良林)
-      - 中国-7.83MB/s(Youtube:不良林)
-      - 中国-3.74MB/s(Youtube:不良林)
-      - 中国-9.60MB/s(Youtube:不良林)
-      - 中国-2.63MB/s(Youtube:不良林)
-      - 中国-8.18MB/s(Youtube:不良林)
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港->🇯🇵_JP_日本
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇺🇸_US_美国
-      - _HK_香港->🇺🇸_US_美国 2
-      - _JP_日本
-      - _JP_日本 2
-      - _JP_日本 3
-      - _SG_新加坡
-      - _SG_新加坡 2
-      - _SG_新加坡 3
-      - _SG_新加坡 4
+      - 橘子
+      - 桔子
+      - 苹果
+      - 菠萝
+      - 香蕉
+      - 橙子
+      - 西瓜
+      - 水蜜桃
+      - 猕猴桃
+      - 葡萄
+      - 石榴
+      - 火龙果
+      - 牛油果
+      - 榴莲
+      - 哈密瓜
+      - 车厘子
+      - 樱桃
+      - 桑葚
+      - 柚子
+      - 椰子
+      - 提子
+      - 土豆
+      - 酸枣
+      - 辣条
+      - 蛋糕
+      - 冰淇淋
+      - 鱼豆腐
+      - 金针菇
+      - 芹菜
+      - 西红柿
+      - 黄瓜
+      - 苦瓜
+      - 啤酒
+      - 馒头
+      - 香菜
+      - 地瓜
+      - "@AntiFilteringChannel شیدای زمانه"
+      - "@Sezar_Sec (SS-Netherlands 2)"
+      - t.me/wbnet_🇭🇰_HK_香港_32
+      - t.me/wbnet_🇺🇸_US_美国_29
+      - t.me/wbnet_🇭🇰_HK_香港_36
+      - "|13.40Mb"
+      - "|18.96Mb"
+      - "| 7.68Mb"
+      - "|23.00Mb"
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 香港09
+      - 香港10
+      - 香港11
+      - 香港12
+      - 香港13
+      - 香港14
+      - 香港15
+      - 香港16
+      - 香港17
+      - 香港18
+      - 香港19
+      - 香港20
+      - 香港21
+      - 香港22
+      - 香港23
+      - 香港24
+      - 香港25
+      - 香港26
+      - 菲律宾01
+      - 菲律宾02
+      - 菲律宾03
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
+      - 新加坡06
+      - 新加坡07
+      - 新加坡08
+      - 新加坡09
+      - 新加坡10
+      - 新加坡11
+      - 新加坡12
+      - 新加坡13
+      - 新加坡14
+      - 新加坡15
+      - 新加坡16
+      - 新加坡17
+      - 新加坡18
+      - 台湾省01
+      - 台湾省02
+      - 台湾省03
+      - 台湾省04
+      - 台湾省05
+      - 台湾省06
+      - 日本01
+      - 日本02
+      - 日本03
+      - 日本04
+      - 日本05
+      - 日本06
+      - 日本07
+      - 日本08
+      - 日本09
+      - 日本10
+      - 日本11
+      - 日本12
+      - 日本13
+      - 美国01
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - 美国06
+      - 美国07
+      - 美国08
+      - 美国09
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 美国14
+      - 美国15
+      - 美国16
+      - 美国17
+      - 美国18
+      - 美国19
+      - 美国20
+      - 美国21
+      - 美国22
+      - 英国
+      - 韩国
+      - 澳洲
+      - 荷兰
+      - 德国
+      - 印度
+      - 巴西
+      - 法国
+      - 泰国
+      - 土耳其
+      - 阿根廷
+      - 加拿大
+      - 俄罗斯
+      - 西班牙
+      - 以色列
+      - 马来西亚
+      - 巴基斯坦
+      - 哥伦比亚
+      - 「官 网」iplc.vip
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
