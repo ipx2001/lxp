@@ -5,75 +5,235 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Japan | 07, server: oss-cn-shanghai.westdatacloud.xyz, port: 20037, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Vietnam | 01, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20069, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: United States | 07, server: oss-cn-shanghai.westdatacloud.xyz, port: 20047, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Japan | 08, server: oss-cn-shanghai.westdatacloud.xyz, port: 20038, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong | 04, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20004, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 04, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20014, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 03, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20013, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: United States | 06, server: oss-cn-shanghai.westdatacloud.xyz, port: 20046, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 05, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20015, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Germany | 01, server: cos-ap-beijing.westdatacloud.xyz, port: 20054, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 08, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20018, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Chile | 01, server: oss-cn-shanghai.westdatacloud.xyz, port: 20064, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: Israel | 01, server: cos-ap-beijing.westdatacloud.xyz, port: 20067, type: trojan, password: 142CB644-6639-A1BF-C9FC-EAB2A0E6A777, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
+  - {name: _MO_Relay__3, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: 澳門電訊SG4, server: 45.64.22.55, port: 443, type: trojan, password: NqYpxKxB8A5jnDaISe834lAOaTwEOYzCeSD7CSZyFa0C3ypcR2F9XD3ug36lZR, sni: pbvre.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: 澳門電訊JP3, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
+  - {name: "|22.12Mb", server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国香港D, server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: www.82317217.xyz}}, udp: true}
+  - {name: 美国|tg频道:@ripaojiedian, server: fnhk1000snews008.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 3c88ec132b66, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1000snews008.svcline.com, path: /oqydkriz, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: tg频道:@ripaojiedian, server: fnhk1000new009.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 47b484a2f3eb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1000snews009.svcline.com, path: /daaaizpk, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾8|tg频道:@ripaojiedian, server: newtw600mline001.fnline.me, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d3111300c9a1, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newtw600mline001.fnline.me, path: /mreyhagokjnk, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: JP 1 Amazon.com  Inc. TG:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: JP 6 Amazon Technologies Inc. TG:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: JP 51 Amazon Technologies Inc. TG:@nodpai, server: 45.64.22.55, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: tg+univstar.香港HKBN-dip_1, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HGC-dip, server: 116.162.120.27, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKBN-dip_2, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKT-dip_1, server: 116.162.120.31, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKT, server: 116.162.120.33, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKBN-dip_3, server: 116.162.120.34, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKT-dip_2, server: 116.162.120.40, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.Chuncheon-Oracle_1, server: 116.162.120.43, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.Chuncheon-Oracle_2, server: 116.162.120.43, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.Chuncheon-Oracle_3, server: 116.162.120.44, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.Chuncheon-Oracle_4, server: 116.162.120.44, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKT-dip_3, server: 116.162.120.49, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港HKT-dip_4, server: 116.162.120.50, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: tg+univstar.香港EDCL_2, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnhat-香港HKT-dip_1, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnhat-香港HKT, server: 125.94.215.234, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=1, server: jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
+  - {name: 【A】香港  VIP 1 - Nearoute, server: n21.boom.skin, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 30796:XGSgzF, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】台湾  VIP 3 - 中华电信, server: s100.boom.skin, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 30796:XGSgzF, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: YouTube梦歌|NETFLIX_8, server: 47.52.50.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: www.39472028.xyz}}, udp: true}
+  - {name: YouTube梦歌|NETFLIX_55, server: 119.36.161.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/323127100515, headers: {Host: www.42768395.xyz}}, udp: true}
+  - {name: YouTube梦歌|NETFLIX_39, server: t1.samsung.bforward2.uk, port: 443, type: trojan, password: 67e200f1-4ff5-42ca-8425-3f16f7986c29, sni: t1.samsung.bforward2.uk, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾, server: 111.45.22.139, port: 9017, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-4.61MB/s(Youtube:不良林), server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 09b69a66-bfd5-46fd-b551-be929b8b0079, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 美国-1.31MB/s(Youtube:不良林), server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, sni: 1sj.fengcj.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡#22, server: bp.i809.ml, port: 12087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt54.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: 免费梯子https://t.me/mftizi, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 09b69a66-bfd5-46fd-b551-be929b8b0079, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: sshocean-1127_trojan_22, server: ust3.sshocean.net, port: 443, type: trojan, password: f2bc0d7a-982e-4c8c-aa74-1a0e7ed35ed1, sni: ust3.sshocean.net, skip-cert-verify: true, udp: true}
+  - {name: sshocean-1127_trojan_21, server: ust2.sshocean.net, port: 443, type: trojan, password: 15dbd7f3-050e-4ff6-a924-2b079d8dc7e4, sni: ust2.sshocean.net, skip-cert-verify: true, udp: true}
+  - {name: speednode_0068, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 美国01|测试, server: shzz.ikuncloud.com, port: 14662, type: ss, cipher: chacha20-ietf-poly1305, password: e87c4fb4-9d79-4c96-9643-95e93987cafd, udp: true}
+  - {name: 「🇺🇸」美国, server: bp.i809.ml, port: 12083, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt11.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: 「🇯🇵」日本, server: bp.i809.ml, port: 22022, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt38.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: 「🇭🇰」香港, server: bp.i809.ml, port: 18443, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt53.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: 「🇸🇬」新加坡A, server: bp.i809.ml, port: 12087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt54.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: 「🇸🇬」新加坡B, server: bp.i809.ml, port: 34443, type: vmess, uuid: b9c4f30f-0e95-4c23-80f8-b134414f43ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bp.i809.ml, network: grpc, grpc-opts: {grpc-service-name: yydscf}, udp: true}
+  - {name: 「🇸🇬」新加坡C, server: bp.i809.ml, port: 32087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt61.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: tg频道:@sharingnode, server: 43.156.18.119, port: 32482, type: vmess, uuid: fd3df956-8d30-4942-f8be-f4441f292cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: tg频道:@sharingnode 2, server: 194.87.248.27, port: 26743, type: vmess, uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: tg频道:@sharingnode 3, server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, sni: 1sj.fengcj.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,79 +252,259 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 中国香港D
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 「🇭🇰」香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +520,59 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan | 07
-      - Vietnam | 01
-      - United States | 07
-      - Japan | 08
-      - Hong Kong | 04
-      - Taiwan | 04
-      - Taiwan | 03
-      - United States | 06
-      - Taiwan | 05
-      - Germany | 01
-      - Taiwan | 08
-      - Chile | 01
-      - Israel | 01
+      - _MO_Relay__3
+      - 澳門電訊SG4
+      - 澳門電訊JP3
+      - "|22.12Mb"
+      - 中国香港D
+      - 美国|tg频道:@ripaojiedian
+      - tg频道:@ripaojiedian
+      - 台湾8|tg频道:@ripaojiedian
+      - 中转 🇭🇰 HK 3 Akari Networks Limited TG:@airproxies
+      - JP 1 Amazon.com  Inc. TG:@airproxies
+      - JP 6 Amazon Technologies Inc. TG:@airproxies
+      - JP 51 Amazon Technologies Inc. TG:@nodpai
+      - tg+univstar.香港HKBN-dip_1
+      - tg+univstar.香港HGC-dip
+      - tg+univstar.香港HKBN-dip_2
+      - tg+univstar.香港HKT-dip_1
+      - tg+univstar.香港HKT
+      - tg+univstar.香港HKBN-dip_3
+      - tg+univstar.香港HKT-dip_2
+      - tg+univstar.Chuncheon-Oracle_1
+      - tg+univstar.Chuncheon-Oracle_2
+      - tg+univstar.Chuncheon-Oracle_3
+      - tg+univstar.Chuncheon-Oracle_4
+      - tg+univstar.香港HKT-dip_3
+      - tg+univstar.香港HKT-dip_4
+      - tg+univstar.香港EDCL_2
+      - vpnhat-香港HKT-dip_1
+      - vpnhat-香港HKT
+      - 日本=tg频道:@bpjzx2=1
+      - 【A】香港  VIP 1 - Nearoute
+      - 【A】台湾  VIP 3 - 中华电信
+      - YouTube梦歌|NETFLIX_8
+      - YouTube梦歌|NETFLIX_55
+      - YouTube梦歌|NETFLIX_39
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港-4.61MB/s(Youtube:不良林)
+      - 美国-1.31MB/s(Youtube:不良林)
+      - 新加坡#22
+      - 免费梯子https://t.me/mftizi
+      - sshocean-1127_trojan_22
+      - sshocean-1127_trojan_21
+      - speednode_0068
+      - 美国01|测试
+      - 「🇺🇸」美国
+      - 「🇯🇵」日本
+      - 「🇭🇰」香港
+      - 「🇸🇬」新加坡A
+      - 「🇸🇬」新加坡B
+      - 「🇸🇬」新加坡C
+      - tg频道:@sharingnode
+      - tg频道:@sharingnode 2
+      - tg频道:@sharingnode 3
+      - NONE
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
