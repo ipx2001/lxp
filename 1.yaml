@@ -5,147 +5,699 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V1-#174|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40174, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#232|广东-香港HKBN|NF|x1.2|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40232, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V3-#66|广东-香港HKT|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40066, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#274|广东-香港HKBN|x1.0|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40274, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#242|广东-香港HKT|x1.2|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40242, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#136|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40136, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#265|广东-香港HKT|x1.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40265, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#337|广东-香港HGC|x2.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40337, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#172|IPLC-深圳-新加坡|x4.0|SSR, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40172, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#266|广东-香港HKT|x1.0|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40266, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V4-#243|广东-香港HKT|x2.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40243, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V4-#195|广东-香港|x1.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40195, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V3-#56|广东-香港|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40056, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#257|广东-香港HKT|x1.5|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40257, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#233|广东-香港HKT|NF|x1.5|SSR, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40233, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V2-#104|cn2-新加坡|x1.5|SSR, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40104, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V3-#54|广东-香港HKBN|x1.5|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40054, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V3-#278|广东-香港HKBN|x1.5|SSR, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40278, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#303|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40303, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V4-#18|广东-香港|x1.0|SSR, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40018, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40341, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#302|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40302, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#305|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40305, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40203, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#330|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40330, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40279, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40271, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V3-#234|广东-香港HKT|NF|x1.5|SSR, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40234, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#329|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40329, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#304|IPLC-深圳-香港HKT|x4.0|SSR, server: pg57.cdn.node.a.ddns-ounk.com, port: 40304, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
-  - {name: V1-#170|CN2-香港HKBN|x2.0|SSR, server: bf98.cdn.node.a.ddns-ounk.com, port: 40170, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 61551:ZDkY5S, obfs-param: 923af61551.microsoft.com, udp: true}
+  - {name: HK 1 → tg@nicevpn123, server: 203.218.53.222, port: 18001, type: vmess, uuid: 26fe3b2c-1005-362b-9700-426961cbd50b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 11 → tg@nicevpn123, server: join-to.unlimiteddev.tk, port: 80, type: vmess, uuid: 4b82ab74-ad09-46d0-bfdb-d2015d3511ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: join-to.unlimiteddev.tk}}, udp: true}
+  - {name: HK 18 → tg@nicevpn123, server: hk05.trojanyyds.xyz, port: 443, type: trojan, password: cd41b9d7-df15-46ad-a778-257b0851525a, skip-cert-verify: true, udp: true}
+  - {name: HK 19 → tg@nicevpn123, server: de.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify: true, udp: true}
+  - {name: HK 36 → tg@nicevpn123, server: hk03.trojanyyds.xyz, port: 443, type: trojan, password: a6bebbb9-c6bc-42af-9ea2-434a2164a978, sni: "%24hk03.trojanyyds.xyz", skip-cert-verify: true, udp: true}
+  - {name: HK 37 → tg@nicevpn123, server: hk04.trojanyyds.xyz, port: 443, type: trojan, password: a6bebbb9-c6bc-42af-9ea2-434a2164a978, sni: "%24hk04.trojanyyds.xyz", skip-cert-verify: true, udp: true}
+  - {name: HK 38 → tg@nicevpn123, server: hk02.trojanyyds.xyz, port: 443, type: trojan, password: a6bebbb9-c6bc-42af-9ea2-434a2164a978, sni: "%24hk02.trojanyyds.xyz", skip-cert-verify: true, udp: true}
+  - {name: HK 43 → tg@nicevpn123, server: usa.stablize.top, port: 443, type: trojan, password: 7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify: true, udp: true}
+  - {name: HK 44 → tg@nicevpn123, server: jp.stablize.top, port: 443, type: trojan, password: 8fb84310-7f34-4e8e-baa8-83001844cc27, skip-cert-verify: true, udp: true}
+  - {name: HK 49 → tg@nicevpn123, server: sg.stablize.top, port: 443, type: trojan, password: 7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify: true, udp: true}
+  - {name: IN 2 → tg@nicevpn123, server: 68.183.83.94, port: 59477, type: vmess, uuid: b8f6a71c-6925-4e84-fb93-6e54f8d98b25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: JP 2 → tg@nicevpn123, server: kaizen-jp-3.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: JP 3 → tg@nicevpn123, server: kaizen-jp-3.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: JP 9 → tg@nicevpn123, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: JP 10 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: bdebf62a-ac8a-42b0-9188-b4d8e00ea4c7, skip-cert-verify: true, udp: true}
+  - {name: JP 11 → tg@nicevpn123, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: JP 12 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: e859ba46-edb8-4007-a666-f70038b519a0, skip-cert-verify: true, udp: true}
+  - {name: JP 14 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 8e35cfee-acbf-45d6-9d1a-1c8b916543c3, skip-cert-verify: true, udp: true}
+  - {name: JP 15 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 27b5a4b4-a010-4577-94c4-77d630a319cf, skip-cert-verify: true, udp: true}
+  - {name: JP 16 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 50ecfcaf-cec1-4be4-a20e-e67f77cf3faf, skip-cert-verify: true, udp: true}
+  - {name: JP 17 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: ddcc589b-146e-4eab-9957-800ac92a8db1, skip-cert-verify: true, udp: true}
+  - {name: JP 19 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 4effe03b-f2d6-4f1f-b371-eba1054bb249, skip-cert-verify: true, udp: true}
+  - {name: JP 22 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 7b6991cf-2d91-4e2d-a59a-148b52edec75, skip-cert-verify: true, udp: true}
+  - {name: JP 24 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: f79b9954-c349-4b26-9e59-38a5e539a5d9, skip-cert-verify: true, udp: true}
+  - {name: JP 25 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 9e634d02-40ac-4b4b-b9af-e46af97c09d1, skip-cert-verify: true, udp: true}
+  - {name: JP 26 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 043c7441-f354-42b7-91ce-398c4b0b29ea, skip-cert-verify: true, udp: true}
+  - {name: JP 28 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 3d8db54b-8eaa-43f5-b8e6-94e481aeca11, skip-cert-verify: true, udp: true}
+  - {name: JP 29 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 7867d08b-acdb-4cf8-81e4-6bdaab372035, skip-cert-verify: true, udp: true}
+  - {name: JP 30 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: b2407f3b-555b-4fcc-9921-5851b95a94a6, skip-cert-verify: true, udp: true}
+  - {name: JP 31 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: f2d1896d-e3f6-4312-8fb3-f81c0c27da3c, skip-cert-verify: true, udp: true}
+  - {name: JP 32 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 4b1639ec-e0d0-41d2-9563-03dbceae8d15, skip-cert-verify: true, udp: true}
+  - {name: JP 33 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 1a654941-cc92-4e6d-9962-6f6fa97fc162, skip-cert-verify: true, udp: true}
+  - {name: JP 34 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 41f0a7ce-f6c2-4f2c-b3a9-13bd68538eb6, skip-cert-verify: true, udp: true}
+  - {name: JP 35 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 678b2803-9ba9-49ad-9083-154830d627a2, skip-cert-verify: true, udp: true}
+  - {name: JP 36 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: bc58f81b-3f93-400c-aa88-893f5f52c29a, skip-cert-verify: true, udp: true}
+  - {name: JP 38 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 181367b4-8254-4723-b665-92f317910536, skip-cert-verify: true, udp: true}
+  - {name: JP 41 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: efd492dc-08d9-4acf-8164-fbe2647f3419, skip-cert-verify: true, udp: true}
+  - {name: JP 51 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 9d9a80cd-990c-4607-a158-c13767121701, skip-cert-verify: true, udp: true}
+  - {name: JP 57 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 4b0e9806-7599-43b1-85c6-d4d40626cb8d, skip-cert-verify: true, udp: true}
+  - {name: JP 59 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 06898f03-c1d6-40cb-ab76-8f110f5ca0e3, skip-cert-verify: true, udp: true}
+  - {name: JP 60 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: abfd07dd-9f67-4b8c-98c6-696940676260, skip-cert-verify: true, udp: true}
+  - {name: JP 61 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: ce74a36a-8996-428f-9498-bbdf6388b490, skip-cert-verify: true, udp: true}
+  - {name: JP 62 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 4c3ad460-75da-426e-b70d-7ec7b42eaef8, skip-cert-verify: true, udp: true}
+  - {name: JP 76 → tg@nicevpn123, server: 45.66.134.219, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: JP 88 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 81432434-ac6a-4992-9abe-c4f140bcb379, skip-cert-verify: true, udp: true}
+  - {name: JP 89 → tg@nicevpn123, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 06d29997-d004-4338-a4e6-d1fb61b73c0b, skip-cert-verify: true, udp: true}
+  - {name: JP 90 → tg@nicevpn123, server: uk.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify: true, udp: true}
+  - {name: JP 92 → tg@nicevpn123, server: 43.207.82.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: JP 101 → tg@nicevpn123, server: trs17.bolab.net, port: 22, type: trojan, password: 40c89b10235c40321e7a3cef82b53a03, skip-cert-verify: true, udp: true}
+  - {name: JP 102 → tg@nicevpn123, server: vn.mjt001.com, port: 443, type: trojan, password: d2eb7266-b912-4fc0-bcfb-47277251b506, skip-cert-verify: true, udp: true}
+  - {name: JP 107 → tg@nicevpn123, server: 49.212.203.7, port: 443, type: trojan, password: 18844%252540zxcvbn, sni: "%24os-tr-2.cats22.net", skip-cert-verify: true, udp: true}
+  - {name: JP 108 → tg@nicevpn123, server: 49.212.203.7, port: 443, type: trojan, password: 18844%2540zxcvbn, sni: "%24os-tr-2.cats22.net", skip-cert-verify: true, udp: true}
+  - {name: JP 124 → tg@nicevpn123, server: 52.199.190.20, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: SG 14 → tg@nicevpn123, server: 54.179.182.190, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: SG 15 → tg@nicevpn123, server: 18.140.67.76, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: SG 16 → tg@nicevpn123, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: SG 19 → tg@nicevpn123, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: SG 21 → tg@nicevpn123, server: 18.141.8.87, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: SG 25 → tg@nicevpn123, server: jp.mjt001.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, sni: "%24jp.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: SG 26 → tg@nicevpn123, server: lux.mjt001.com, port: 443, type: trojan, password: 3b14c162-43a0-4f16-bedf-50e818a9a8e3, sni: "%24lux.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: SG 27 → tg@nicevpn123, server: hinet.mjt001.com, port: 443, type: trojan, password: 38a5fd20-ce5c-4342-9c86-c331602ccb39, skip-cert-verify: true, udp: true}
+  - {name: SG 28 → tg@nicevpn123, server: ar.mjt001.com, port: 443, type: trojan, password: 3b14c162-43a0-4f16-bedf-50e818a9a8e3, sni: "%24ar.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: SG 29 → tg@nicevpn123, server: ar.mjt001.com, port: 443, type: trojan, password: d2eb7266-b912-4fc0-bcfb-47277251b506, sni: "%24ar.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: TW 1 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: TW 2 → tg@nicevpn123, server: 211.72.35.152, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
+  - {name: TW 3 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
+  - {name: TW 4 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
+  - {name: TW 5 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+  - {name: TW 6 → tg@nicevpn123, server: 211.72.35.152, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: true, udp: true}
+  - {name: TW 7 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: TW 8 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
+  - {name: TW 9 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: TW 10 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
+  - {name: TW 11 → tg@nicevpn123, server: 1.171.177.111, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW 12 → tg@nicevpn123, server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW 13 → tg@nicevpn123, server: 60.249.3.229, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: TW 15 → tg@nicevpn123, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: TW 16 → tg@nicevpn123, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
+  - {name: TW 17 → tg@nicevpn123, server: 60.249.3.226, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: TW 18 → tg@nicevpn123, server: 211.72.35.158, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 21 → tg@nicevpn123, server: 60.249.3.126, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 23 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: TW 24 → tg@nicevpn123, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 25 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: TW 27 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
+  - {name: TW 28 → tg@nicevpn123, server: tw01.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, skip-cert-verify: true, udp: true}
+  - {name: TW 29 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: TW 30 → tg@nicevpn123, server: 211.72.35.158, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 33 → tg@nicevpn123, server: 60.249.3.126, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 35 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 36 → tg@nicevpn123, server: 60.249.3.227, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 37 → tg@nicevpn123, server: 60.249.3.227, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 38 → tg@nicevpn123, server: 60.249.3.227, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 39 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: TW 40 → tg@nicevpn123, server: 60.249.3.226, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 41 → tg@nicevpn123, server: 60.249.3.231, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 42 → tg@nicevpn123, server: 60.249.3.226, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 43 → tg@nicevpn123, server: 60.249.3.126, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 44 → tg@nicevpn123, server: 60.249.3.231, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 45 → tg@nicevpn123, server: 60.249.3.231, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: TW 46 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TW 47 → tg@nicevpn123, server: 60.249.3.226, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 48 → tg@nicevpn123, server: 60.249.3.226, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: TW 49 → tg@nicevpn123, server: 60.249.3.125, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: TW 50 → tg@nicevpn123, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
+  - {name: TW 51 → tg@nicevpn123, server: tw-oo-01.click, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, skip-cert-verify: true, udp: true}
+  - {name: UA 2 → tg@nicevpn123, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
+  - {name: UA 3 → tg@nicevpn123, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
+  - {name: US 2 → tg@nicevpn123, server: kaizen-us-01.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: US 3 → tg@nicevpn123, server: 172.99.188.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 5 → tg@nicevpn123, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 6 → tg@nicevpn123, server: 172.99.188.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 7 → tg@nicevpn123, server: 172.99.188.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US 8 → tg@nicevpn123, server: 172.99.188.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US 9 → tg@nicevpn123, server: 172.99.188.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 10 → tg@nicevpn123, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US 20 → tg@nicevpn123, server: rsp.lop001.xyz, port: 46066, type: vmess, uuid: 14c0784b-827a-40c9-a530-99097619916a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eoix290, headers: {Host: rsp.lop001.xyz}}, udp: true}
+  - {name: US 21 → tg@nicevpn123, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: US 25 → tg@nicevpn123, server: 148.59.74.186, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: US 33 → tg@nicevpn123, server: 104.149.155.13, port: 443, type: trojan, password: 17c412d9-f283-483c-b095-72605fb2840e, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: US 34 → tg@nicevpn123, server: kaizen-us-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: US 35 → tg@nicevpn123, server: dl-jp3.efyunpan.com, port: 443, type: trojan, password: 550920e9-b9ae-4187-9312-a474c33ef580, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: US 37 → tg@nicevpn123, server: dl-jp1.efyunpan.com, port: 443, type: trojan, password: 550920e9-b9ae-4187-9312-a474c33ef580, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: US 39 → tg@nicevpn123, server: dl-hk1.efyunpan.com, port: 443, type: trojan, password: 550920e9-b9ae-4187-9312-a474c33ef580, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: US 41 → tg@nicevpn123, server: 104.149.155.13, port: 443, type: trojan, password: 79c935c0-27dc-4383-b307-dcac1b8e5509, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: US 43 → tg@nicevpn123, server: 20.78.72.90, port: 443, type: trojan, password: a9193011-aa4c-43ed-9331-aea7c213c6bb, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: US 44 → tg@nicevpn123, server: 148.59.74.185, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: US 226 → tg@nicevpn123, server: 172.99.188.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 265 → tg@nicevpn123, server: trxjp.ballistics.top, port: 443, type: trojan, password: 0c355515-b1e5-4c0a-b843-e1defbe7c0fa, skip-cert-verify: true, udp: true}
+  - {name: US 268 → tg@nicevpn123, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: true, udp: true}
+  - {name: US 269 → tg@nicevpn123, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
+  - {name: US 275 → tg@nicevpn123, server: ca.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify: true, udp: true}
+  - {name: US 280 → tg@nicevpn123, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: US 566 → tg@nicevpn123, server: 172.99.188.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US 639 → tg@nicevpn123, server: sg.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify: true, udp: true}
+  - {name: US 642 → tg@nicevpn123, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: US 643 → tg@nicevpn123, server: permissions.freetrade.link, port: 443, type: trojan, password: lCYI0KOB8exTgp736ac3ZR3DnXwaOFS5pACRuZzSyeYy4N3j2D8qAxF9alDSEC, skip-cert-verify: true, udp: true}
+  - {name: US 646 → tg@nicevpn123, server: www.cjf0423.cf, port: 443, type: trojan, password: !<str> 111111, skip-cert-verify: true, udp: true}
+  - {name: US 649 → tg@nicevpn123, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, skip-cert-verify: true, udp: true}
+  - {name: US 653 → tg@nicevpn123, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: US 654 → tg@nicevpn123, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: US 662 → tg@nicevpn123, server: ap.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify: true, udp: true}
+  - {name: US 664 → tg@nicevpn123, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: US 668 → tg@nicevpn123, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: true, udp: true}
+  - {name: US 707 → tg@nicevpn123, server: 13.215.49.89, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US 735 → tg@nicevpn123, server: my.mjt001.com, port: 443, type: trojan, password: d18f869b-4e42-47e6-ae3d-2f09c33daec1, sni: "%24my.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 744 → tg@nicevpn123, server: hinet.mjt001.com, port: 443, type: trojan, password: 500b1c7c-caf0-481c-8c7d-3eeb84e70ad4, sni: "%24hinet.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 745 → tg@nicevpn123, server: jp.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, sni: "%24jp.stablize.top", skip-cert-verify: true, udp: true}
+  - {name: US 778 → tg@nicevpn123, server: kr.mjt001.com, port: 443, type: trojan, password: 3b14c162-43a0-4f16-bedf-50e818a9a8e3, sni: "%24kr.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 780 → tg@nicevpn123, server: li1faiubsvdnasjp2.559xp5.cn, port: 443, type: trojan, password: dbc97910-5265-488e-b2e5-62e533f97326, skip-cert-verify: true, udp: true}
+  - {name: US 782 → tg@nicevpn123, server: usa.stablize.top, port: 443, type: trojan, password: 0a7db4de-0e00-44b9-8c99-0628cff22268, skip-cert-verify: true, udp: true}
+  - {name: US 783 → tg@nicevpn123, server: sg.stablize.top, port: 443, type: trojan, password: 0a7db4de-0e00-44b9-8c99-0628cff22268, skip-cert-verify: true, udp: true}
+  - {name: US 784 → tg@nicevpn123, server: jp.stablize.top, port: 443, type: trojan, password: 0a7db4de-0e00-44b9-8c99-0628cff22268, skip-cert-verify: true, udp: true}
+  - {name: US 785 → tg@nicevpn123, server: ap.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
+  - {name: US 786 → tg@nicevpn123, server: 20.2.67.215, port: 443, type: trojan, password: 500b1c7c-caf0-481c-8c7d-3eeb84e70ad4, sni: "%24hinet.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 787 → tg@nicevpn123, server: usa.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
+  - {name: US 789 → tg@nicevpn123, server: jp.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
+  - {name: US 790 → tg@nicevpn123, server: 20.2.67.215, port: 443, type: trojan, password: 0a5a2476-ac92-4703-9293-0d4fa5d33308, sni: "%24uk.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 791 → tg@nicevpn123, server: sg.stablize.top, port: 443, type: trojan, password: 3f27d6e3-2112-46f4-814c-0dc2dfb3fe23, skip-cert-verify: true, udp: true}
+  - {name: US 792 → tg@nicevpn123, server: ca.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
+  - {name: US 793 → tg@nicevpn123, server: sfo.iqmtp.live, port: 443, type: trojan, password: 3628ca8d-6371-45df-879c-2d3e5d110b51, skip-cert-verify: true, udp: true}
+  - {name: US 794 → tg@nicevpn123, server: sg.stablize.top, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
+  - {name: US 795 → tg@nicevpn123, server: 24.199.70.112, port: 443, type: trojan, password: 3628ca8d-6371-45df-879c-2d3e5d110b51, sni: "%24sfo.iqmtp.live", skip-cert-verify: true, udp: true}
+  - {name: US 801 → tg@nicevpn123, server: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 803 → tg@nicevpn123, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 804 → tg@nicevpn123, server: ar.mjt001.com, port: 443, type: trojan, password: d18f869b-4e42-47e6-ae3d-2f09c33daec1, sni: "%24ar.mjt001.com", skip-cert-verify: true, udp: true}
+  - {name: US 805 → tg@nicevpn123, server: jp03-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: 507f9260-21e6-3977-9adf-208d6c3acfd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.srthdw.art}}, udp: true}
+  - {name: US 806 → tg@nicevpn123, server: uk.mjt001.com, port: 443, type: trojan, password: 0a5a2476-ac92-4703-9293-0d4fa5d33308, skip-cert-verify: true, udp: true}
+  - {name: US 808 → tg@nicevpn123, server: 150.230.201.192, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: "%24www.seetheworldjp.ga", skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -164,178 +716,703 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -351,37 +1428,175 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V1-#174|IPLC-深圳-新加坡|x4.0|SSR
-      - V2-#232|广东-香港HKBN|NF|x1.2|SSR
-      - V3-#66|广东-香港HKT|x1.5|SSR
-      - V2-#274|广东-香港HKBN|x1.0|SSR
-      - V2-#242|广东-香港HKT|x1.2|SSR
-      - V1-#136|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#265|广东-香港HKT|x1.0|SSR
-      - V2-#337|广东-香港HGC|x2.0|SSR
-      - V1-#172|IPLC-深圳-新加坡|x4.0|SSR
-      - V1-#266|广东-香港HKT|x1.0|SSR
-      - V4-#243|广东-香港HKT|x2.0|SSR
-      - V4-#195|广东-香港|x1.0|SSR
-      - V3-#56|广东-香港|x1.5|SSR
-      - V2-#257|广东-香港HKT|x1.5|SSR
-      - V2-#233|广东-香港HKT|NF|x1.5|SSR
-      - V2-#104|cn2-新加坡|x1.5|SSR
-      - V3-#54|广东-香港HKBN|x1.5|SSR
-      - V3-#278|广东-香港HKBN|x1.5|SSR
-      - V1-#303|IPLC-深圳-香港HKT|x4.0|SSR
-      - V4-#18|广东-香港|x1.0|SSR
-      - V1-#341|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#302|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#305|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#203|IPLC-深圳-香港HKT|NF|x4.0|SSR
-      - V1-#330|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#279|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V1-#271|IPLC-深圳-香港HKBN|x4.0|SSR
-      - V3-#234|广东-香港HKT|NF|x1.5|SSR
-      - V1-#329|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#304|IPLC-深圳-香港HKT|x4.0|SSR
-      - V1-#170|CN2-香港HKBN|x2.0|SSR
+      - HK 1 → tg@nicevpn123
+      - HK 11 → tg@nicevpn123
+      - HK 18 → tg@nicevpn123
+      - HK 19 → tg@nicevpn123
+      - HK 36 → tg@nicevpn123
+      - HK 37 → tg@nicevpn123
+      - HK 38 → tg@nicevpn123
+      - HK 43 → tg@nicevpn123
+      - HK 44 → tg@nicevpn123
+      - HK 49 → tg@nicevpn123
+      - IN 2 → tg@nicevpn123
+      - JP 2 → tg@nicevpn123
+      - JP 3 → tg@nicevpn123
+      - JP 9 → tg@nicevpn123
+      - JP 10 → tg@nicevpn123
+      - JP 11 → tg@nicevpn123
+      - JP 12 → tg@nicevpn123
+      - JP 14 → tg@nicevpn123
+      - JP 15 → tg@nicevpn123
+      - JP 16 → tg@nicevpn123
+      - JP 17 → tg@nicevpn123
+      - JP 19 → tg@nicevpn123
+      - JP 22 → tg@nicevpn123
+      - JP 24 → tg@nicevpn123
+      - JP 25 → tg@nicevpn123
+      - JP 26 → tg@nicevpn123
+      - JP 28 → tg@nicevpn123
+      - JP 29 → tg@nicevpn123
+      - JP 30 → tg@nicevpn123
+      - JP 31 → tg@nicevpn123
+      - JP 32 → tg@nicevpn123
+      - JP 33 → tg@nicevpn123
+      - JP 34 → tg@nicevpn123
+      - JP 35 → tg@nicevpn123
+      - JP 36 → tg@nicevpn123
+      - JP 38 → tg@nicevpn123
+      - JP 41 → tg@nicevpn123
+      - JP 51 → tg@nicevpn123
+      - JP 57 → tg@nicevpn123
+      - JP 59 → tg@nicevpn123
+      - JP 60 → tg@nicevpn123
+      - JP 61 → tg@nicevpn123
+      - JP 62 → tg@nicevpn123
+      - JP 76 → tg@nicevpn123
+      - JP 88 → tg@nicevpn123
+      - JP 89 → tg@nicevpn123
+      - JP 90 → tg@nicevpn123
+      - JP 92 → tg@nicevpn123
+      - JP 101 → tg@nicevpn123
+      - JP 102 → tg@nicevpn123
+      - JP 107 → tg@nicevpn123
+      - JP 108 → tg@nicevpn123
+      - JP 124 → tg@nicevpn123
+      - SG 14 → tg@nicevpn123
+      - SG 15 → tg@nicevpn123
+      - SG 16 → tg@nicevpn123
+      - SG 19 → tg@nicevpn123
+      - SG 21 → tg@nicevpn123
+      - SG 25 → tg@nicevpn123
+      - SG 26 → tg@nicevpn123
+      - SG 27 → tg@nicevpn123
+      - SG 28 → tg@nicevpn123
+      - SG 29 → tg@nicevpn123
+      - TW 1 → tg@nicevpn123
+      - TW 2 → tg@nicevpn123
+      - TW 3 → tg@nicevpn123
+      - TW 4 → tg@nicevpn123
+      - TW 5 → tg@nicevpn123
+      - TW 6 → tg@nicevpn123
+      - TW 7 → tg@nicevpn123
+      - TW 8 → tg@nicevpn123
+      - TW 9 → tg@nicevpn123
+      - TW 10 → tg@nicevpn123
+      - TW 11 → tg@nicevpn123
+      - TW 12 → tg@nicevpn123
+      - TW 13 → tg@nicevpn123
+      - TW 15 → tg@nicevpn123
+      - TW 16 → tg@nicevpn123
+      - TW 17 → tg@nicevpn123
+      - TW 18 → tg@nicevpn123
+      - TW 21 → tg@nicevpn123
+      - TW 23 → tg@nicevpn123
+      - TW 24 → tg@nicevpn123
+      - TW 25 → tg@nicevpn123
+      - TW 27 → tg@nicevpn123
+      - TW 28 → tg@nicevpn123
+      - TW 29 → tg@nicevpn123
+      - TW 30 → tg@nicevpn123
+      - TW 33 → tg@nicevpn123
+      - TW 35 → tg@nicevpn123
+      - TW 36 → tg@nicevpn123
+      - TW 37 → tg@nicevpn123
+      - TW 38 → tg@nicevpn123
+      - TW 39 → tg@nicevpn123
+      - TW 40 → tg@nicevpn123
+      - TW 41 → tg@nicevpn123
+      - TW 42 → tg@nicevpn123
+      - TW 43 → tg@nicevpn123
+      - TW 44 → tg@nicevpn123
+      - TW 45 → tg@nicevpn123
+      - TW 46 → tg@nicevpn123
+      - TW 47 → tg@nicevpn123
+      - TW 48 → tg@nicevpn123
+      - TW 49 → tg@nicevpn123
+      - TW 50 → tg@nicevpn123
+      - TW 51 → tg@nicevpn123
+      - UA 2 → tg@nicevpn123
+      - UA 3 → tg@nicevpn123
+      - US 2 → tg@nicevpn123
+      - US 3 → tg@nicevpn123
+      - US 5 → tg@nicevpn123
+      - US 6 → tg@nicevpn123
+      - US 7 → tg@nicevpn123
+      - US 8 → tg@nicevpn123
+      - US 9 → tg@nicevpn123
+      - US 10 → tg@nicevpn123
+      - US 20 → tg@nicevpn123
+      - US 21 → tg@nicevpn123
+      - US 25 → tg@nicevpn123
+      - US 33 → tg@nicevpn123
+      - US 34 → tg@nicevpn123
+      - US 35 → tg@nicevpn123
+      - US 37 → tg@nicevpn123
+      - US 39 → tg@nicevpn123
+      - US 41 → tg@nicevpn123
+      - US 43 → tg@nicevpn123
+      - US 44 → tg@nicevpn123
+      - US 226 → tg@nicevpn123
+      - US 265 → tg@nicevpn123
+      - US 268 → tg@nicevpn123
+      - US 269 → tg@nicevpn123
+      - US 275 → tg@nicevpn123
+      - US 280 → tg@nicevpn123
+      - US 566 → tg@nicevpn123
+      - US 639 → tg@nicevpn123
+      - US 642 → tg@nicevpn123
+      - US 643 → tg@nicevpn123
+      - US 646 → tg@nicevpn123
+      - US 649 → tg@nicevpn123
+      - US 653 → tg@nicevpn123
+      - US 654 → tg@nicevpn123
+      - US 662 → tg@nicevpn123
+      - US 664 → tg@nicevpn123
+      - US 668 → tg@nicevpn123
+      - US 707 → tg@nicevpn123
+      - US 735 → tg@nicevpn123
+      - US 744 → tg@nicevpn123
+      - US 745 → tg@nicevpn123
+      - US 778 → tg@nicevpn123
+      - US 780 → tg@nicevpn123
+      - US 782 → tg@nicevpn123
+      - US 783 → tg@nicevpn123
+      - US 784 → tg@nicevpn123
+      - US 785 → tg@nicevpn123
+      - US 786 → tg@nicevpn123
+      - US 787 → tg@nicevpn123
+      - US 789 → tg@nicevpn123
+      - US 790 → tg@nicevpn123
+      - US 791 → tg@nicevpn123
+      - US 792 → tg@nicevpn123
+      - US 793 → tg@nicevpn123
+      - US 794 → tg@nicevpn123
+      - US 795 → tg@nicevpn123
+      - US 801 → tg@nicevpn123
+      - US 803 → tg@nicevpn123
+      - US 804 → tg@nicevpn123
+      - US 805 → tg@nicevpn123
+      - US 806 → tg@nicevpn123
+      - US 808 → tg@nicevpn123
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10258,7 +11473,6 @@ rules:
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
- - DOMAIN-SUFFIX,googleapis.com,🔰 节点选择
  - DOMAIN,appleid.apple.com,🔰 节点选择
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
