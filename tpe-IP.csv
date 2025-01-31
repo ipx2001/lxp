@@ -771,8 +771,8 @@ IP地址,端口,TLS,数据中心,地区,城市,网络延迟(毫秒),下载速度
 138.2.66.188,443,TRUE,SIN,Asia Pacific,Singapore,,0.01
 129.150.34.168,443,TRUE,SIN,Asia Pacific,Singapore,,0.01
 8.219.128.95,443,TRUE,SIN,Asia Pacific,Singapore,,0.01
-104.16.158.179,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
-104.16.193.167,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
-104.16.157.163,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
-104.16.248.245,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
-104.16.202.162,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
+104.17.192.231,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
+104.18.156.95,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
+104.16.10.123,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
+104.19.52.244,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
+104.19.34.215,443,TRUE,HKG,Asia Pacific,Hong Kong,,0.41
