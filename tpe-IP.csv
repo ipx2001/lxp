@@ -1,4 +1,4 @@
-IPÂú∞ÂùÄ,Á´ØÂè£,TLS,Êï∞ÊçÆ‰∏≠ÂøÉ,Âú∞Âå∫,ÂüéÂ∏Ç,ÁΩëÁªúÂª∂Ëøü(ÊØ´Áßí),‰∏ãËΩΩÈÄüÂ∫¶(MB/s)
+IPµÿ÷∑,∂Àø⁄,TLS, ˝æ›÷––ƒ,µÿ«¯,≥« –,Õ¯¬Á—”≥Ÿ(∫¡√Î),œ¬‘ÿÀŸ∂»(MB/s)
 101.32.247.126,725,AS,SG,Unknown,Hong Kong,29,12.86
 103.106.230.186,81,AS,TW,Taipei,Singapore,65,5.31
 103.137.63.205,31564,AS,TW,New Taipei City,Singapore,69,1.93
@@ -282,3 +282,104 @@ IPÂú∞ÂùÄ,Á´ØÂè£,TLS,Êï∞ÊçÆ‰∏≠ÂøÉ,Âú∞Âå∫,ÂüéÂ∏Ç,ÁΩëÁªúÂª∂Ëøü(ÊØ´Áßí),‰∏ãËΩΩÈÄüÂ∫¶
 132.145.95.91,443,TRUE,ICN,Asia Pacific,Seoul,89,0.01
 141.11.175.91,443,TRUE,HKG,Asia Pacific,Hong Kong,114,0.01
 132.145.115.230,443,TRUE,NRT,Asia Pacific,Tokyo,58,0.01
+103.118.40.118,42015,AS,HK,Unknown,Hong Kong,29,12.86
+103.133.178.229,26010,AS,HK,Unknown,Singapore,65,5.31
+103.159.207.172,2443,AS,TW,Unknown,Singapore,69,1.93
+103.195.49.223,1009,AS,HK,Unknown,Singapore,66,1.89
+103.195.49.225,1009,AS,HK,Unknown,Singapore,73,1.8
+103.252.117.140,2053,AS,HK,Hong Kong,Singapore,65,1.7
+106.105.199.173,38309,AS,TW,Tainan City,Singapore,68,1.68
+112.119.49.206,23555,AS,HK,Unknown,Singapore,73,1.66
+113.253.142.18,20703,AS,HK,Central,Singapore,64,1.65
+113.254.171.90,12521,AS,HK,Tseung Kwan O,Singapore,67,1.59
+113.254.239.245,11885,AS,HK,Unknown,Singapore,62,1.59
+113.254.28.142,22200,AS,HK,Unknown,Hong Kong,31,1.59
+118.142.2.106,36659,AS,HK,Unknown,Singapore,62,1.58
+118.142.2.106,22498,AS,HK,Unknown,Singapore,64,1.58
+118.142.2.106,13745,AS,HK,Unknown,Singapore,66,1.56
+118.142.2.106,27394,AS,HK,Unknown,Singapore,66,1.56
+118.142.2.106,31542,AS,HK,Unknown,Singapore,60,1.55
+118.142.2.106,21826,AS,HK,Unknown,Singapore,77,1.52
+122.10.12.135,63168,AS,HK,Unknown,Singapore,67,1.5
+122.10.17.144,63168,AS,HK,Unknown,Singapore,61,1.5
+122.10.50.98,63168,AS,HK,Unknown,Singapore,66,1.5
+124.156.129.206,6666,AS,HK,Hong Kong,Singapore,71,1.49
+141.11.148.60,8080,AS,HK,Hong Kong,Singapore,73,1.49
+141.11.175.133,8080,AS,HK,Hong Kong,Singapore,62,1.48
+141.11.175.174,20368,AS,HK,Hong Kong,Singapore,68,1.47
+141.11.216.39,8080,AS,HK,Hong Kong,Singapore,69,1.47
+141.11.217.127,443,AS,HK,Hong Kong,Singapore,65,1.46
+141.11.219.114,8080,AS,HK,Hong Kong,Singapore,60,1.45
+141.11.77.248,8080,AS,HK,Hong Kong,Singapore,64,1.42
+141.11.78.77,8080,AS,HK,Hong Kong,Singapore,65,1.42
+141.11.86.94,18333,AS,TW,Taipei,Singapore,76,1.41
+141.11.91.67,8080,AS,HK,Hong Kong,Singapore,72,1.4
+147.92.41.167,1009,AS,HK,Hong Kong,Singapore,66,1.39
+147.92.41.169,1009,AS,HK,Hong Kong,Singapore,68,1.39
+154.12.176.169,11920,AS,HK,Unknown,Singapore,62,1.38
+154.12.176.201,587,AS,HK,Unknown,Singapore,66,1.38
+154.16.10.34,8080,AS,HK,Hong Kong,Singapore,75,1.38
+156.254.114.122,1233,AS,HK,Ha Kwai Chung,Singapore,60,1.38
+156.254.114.88,1233,AS,HK,Ha Kwai Chung,Singapore,61,1.36
+156.254.115.247,8443,AS,HK,Ha Kwai Chung,Singapore,73,1.36
+156.255.90.175,8443,AS,HK,Ha Kwai Chung,Singapore,64,1.35
+156.59.91.176,443,AS,HK,Hong Kong,Seoul,71,1.35
+162.245.220.242,8080,AS,HK,Unknown,Seoul,83,1.34
+182.160.2.5,53310,AS,HK,Hong Kong,Singapore,72,1.33
+182.160.2.5,33693,AS,HK,Hong Kong,Singapore,64,1.33
+182.160.2.5,39433,AS,HK,Hong Kong,Singapore,62,1.32
+185.74.222.61,2053,AS,HK,Hong Kong,Seoul,61,1.31
+192.131.142.161,46639,AS,HK,Hong Kong,Singapore,68,1.3
+192.131.142.98,44024,AS,HK,Hong Kong,Singapore,64,1.29
+193.200.134.20,12005,AS,HK,Unknown,Singapore,73,1.28
+195.54.171.57,8443,AS,HK,Hong Kong,Seoul,67,1.28
+199.59.231.120,443,AS,HK,Hong Kong,Hong Kong,30,1.28
+2.56.91.89,2053,AS,HK,Hong Kong,Singapore,59,1.28
+2.56.91.89,8443,AS,HK,Hong Kong,Singapore,62,1.27
+202.181.27.218,14526,AS,HK,Unknown,Singapore,71,1.27
+206.237.10.52,29266,AS,HK,Unknown,Singapore,66,1.26
+206.237.27.211,50833,AS,HK,Unknown,Tokyo,37,1.26
+207.226.152.42,443,AS,HK,Unknown,Seoul,70,1.24
+218.188.151.102,10315,AS,HK,Unknown,Singapore,64,1.24
+218.188.151.102,31564,AS,HK,Unknown,Singapore,64,1.24
+218.188.151.102,12062,AS,HK,Unknown,Singapore,65,1.23
+218.188.151.102,26002,AS,HK,Unknown,Hong Kong,32,1.23
+221.125.10.8,57537,AS,HK,Yuen Long San Hui,Singapore,67,1.23
+23.226.8.80,444,AS,HK,Unknown,Hong Kong,32,1.22
+34.92.105.182,57820,AS,HK,Hong Kong,Singapore,72,1.22
+38.180.94.174,20627,AS,HK,Hong Kong,Singapore,66,1.22
+38.180.94.174,35521,AS,HK,Hong Kong,Singapore,65,1.22
+38.207.172.235,8003,AS,HK,Unknown,Hong Kong,115,1.22
+38.207.172.42,443,AS,HK,Unknown,Singapore,61,1.21
+38.6.219.16,8080,AS,HK,Hong Kong,Singapore,64,1.21
+43.129.160.101,54739,AS,HK,Hong Kong,Singapore,64,1.21
+43.132.180.125,42010,AS,HK,Hong Kong,Singapore,71,1.21
+43.135.44.101,30002,AS,HK,Hong Kong,Singapore,70,1.21
+43.154.37.247,4397,AS,HK,Hong Kong,Singapore,66,1.21
+43.154.40.135,10334,AS,HK,Hong Kong,Singapore,72,1.2
+43.155.22.176,443,AS,HK,Hong Kong,Tokyo,38,1.2
+43.155.83.86,38002,AS,HK,Hong Kong,Singapore,73,1.2
+43.155.84.76,55527,AS,HK,Hong Kong,Singapore,266,1.19
+43.155.89.93,55527,AS,HK,Hong Kong,Singapore,65,1.19
+43.252.41.204,2443,AS,HK,Unknown,Tokyo,63,1.19
+45.136.197.252,443,AS,HK,Hong Kong,Singapore,69,1.19
+45.207.222.179,2096,AS,HK,Hong Kong,Tokyo,42,1.19
+46.149.203.202,7656,AS,HK,Unknown,Singapore,62,1.19
+46.232.122.240,8000,AS,HK,Unknown,Seoul,67,1.18
+47.242.126.60,46927,AS,HK,Hong Kong,Singapore,71,1.17
+5.188.33.21,57602,AS,HK,Hong Kong,Singapore,69,1.17
+62.192.175.43,12009,AS,HK,Hong Kong,Singapore,65,1.17
+62.72.163.177,886,AS,HK,Unknown,Tokyo,58,1.16
+66.203.144.241,7656,AS,HK,Hong Kong,Singapore,67,1.16
+66.203.144.242,7656,AS,HK,Hong Kong,Singapore,62,1.16
+66.203.150.210,7656,AS,HK,Hong Kong,Seoul,62,1.16
+66.203.150.211,7656,AS,HK,Hong Kong,Singapore,67,1.15
+74.119.193.94,2053,AS,HK,Hong Kong,Singapore,67,1.15
+82.152.163.172,1233,AS,HK,Hong Kong,Singapore,73,1.14
+83.147.2.104,8080,AS,HK,Hong Kong,Tokyo,60,1.14
+85.208.104.136,8080,AS,HK,Hong Kong,Singapore,61,1.14
+85.208.104.34,8080,AS,HK,Hong Kong,Singapore,74,1.13
+85.237.206.205,12678,AS,TW,Unknown,Hong Kong,112,1.13
+85.237.206.205,443,AS,TW,Unknown,Singapore,66,1.13
+91.217.139.121,8443,AS,HK,Unknown,Singapore,71,1.13
+91.217.139.227,8443,AS,HK,Unknown,Hong Kong,112,1.13
