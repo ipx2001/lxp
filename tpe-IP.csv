@@ -1,4 +1,4 @@
-IP地址,端口,TLS,数据中心,地区,城市,网络延迟(毫秒),下载速度(MB/s)
+ip,port,Region,Country,City
 103.106.228.126,2053,AS,JP,Tokyo,,,
 103.106.230.186,81,AS,TW,Taipei,,,
 103.160.100.205,29844,AS,JP,Tokyo,,,
